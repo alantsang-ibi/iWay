@@ -1,0 +1,17 @@
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ws="http://www.example.com/ws">
+	<soapenv:Header />
+	<soapenv:Body>
+		<ws:clean_employee>
+			<ws:ssn>999-99-9999</ws:ssn>
+			<ws:firstname>Alan</ws:firstname>
+			<ws:lastname>Tsang</ws:lastname>
+			<ws:street>608 Sefton Ave</ws:street>
+			<ws:city>monterey park</ws:city>
+			<ws:state>ca</ws:state>
+			<ws:zip>91755</ws:zip>
+		</ws:clean_employee>
+	</soapenv:Body>
+</soapenv:Envelope>

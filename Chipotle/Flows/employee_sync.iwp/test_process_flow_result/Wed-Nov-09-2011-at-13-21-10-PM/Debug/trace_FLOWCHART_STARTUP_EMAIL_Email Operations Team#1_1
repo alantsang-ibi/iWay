@@ -1,0 +1,34 @@
+Name=Email Operations Team  Type=Agent  InEdge=OnCompletion  From=Store Failure Message  Not nested
+Registers
+             doclocation         [SYS]   config
+             engine              [SYS]   6B3AFB23AF98CF32D26BC3E84DE48E18
+   CHANGED > iway.lastnode       [SYS]   Email Operations Team
+             iway.pid            [SYS]   3988
+   CHANGED > iway.priornode      [SYS]   Store Failure Message
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.179
+             iwayconfig          [SYS]   6B3AFB23AF98CF32D26BC3E84DE48E18
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/6B3AFB23AF98CF32D26BC...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   57ddb322-9250-493c-b528-2fdf99080d07
+             emit.file.filename  [USR]   C:\Alan\out\create_employee_ps_2011-11-...[59]
+Content of document
+	Form=xml, state=error
+	<?xml version="1.0" encoding="UTF-8" ?>
+<emitStatus>
+   <protocol>EMAIL</protocol>
+   <parms>to=alan_tsang@ibi.com, host=ibiwebmail7.ibi.com, subject=Employee Sync Failed, return=status, docattach=false, from=alan_tsang@ibi.com, password=****, usessl=none, </parms>
+   <status>1</status>
+   <msg>messaging error sending reply: javax.mail.MessagingException: Unknown SMTP host: ibiwebmail7.ibi.com;
+  nested exception is:
+	java.net.UnknownHostException: ibiwebmail7.ibi.com</msg>
+   <timestamp>2011-11-09T21:21:09.862Z</timestamp>
+   <attempts>1</attempts>
+   <name>alan_tsang@ibi.com</name>
+</emitStatus>

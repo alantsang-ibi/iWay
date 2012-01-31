@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IWAY xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.iwaysoftware.com/designer/model">
+  <SERVER NAME="iWay Registry">
+    <PROCESSFLOW DESCRIPTION="" IWAYVERSION="6.1.1" NAME="test_flow" TIMEOUT="0">
+      <OBJECTS>
+        <OBJECT CLASS="start" DESCRIPTION="Start Object" ETAP="false" ID="start" KEY="1" NAME="Start" POS_LEFT="0" POS_TOP="0" TYPE="FLOWCHART_STARTUP_START">
+          <USER>
+            <PROPERTIES>
+              <GROUP NAME="General">
+                <PROPERTYITEM DISPLAY="No" ITEMTYPE="boolean" LABEL="Debug" NAME="Debug" REQUIRED="false" VALUE="true" VALUETYPE="boolean"/>
+              </GROUP>
+            </PROPERTIES>
+          </USER>
+          <RUNTIMEVARIABLES/>
+        </OBJECT>
+        <OBJECT CLASS="end" CLASSNAME="" DEACTIVATE="false" DESCRIPTION="End Object" ETAP="false" KEY="2" NAME="End" POS_LEFT="611" POS_TOP="209" TYPE="FLOWCHART_STARTUP_END" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GUIDS/>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="agent" CLASSNAME="com.ibi.agents.XDDQAgent" DEACTIVATE="false" DESCRIPTION="Service Object" ETAP="false" KEY="3" NAME="Service" POS_LEFT="351" POS_TOP="152" TYPE="FLOWCHART_AGENT" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="Main">
+                <PROPERTYITEM DESCRIPTION="The configured Data Quality provider that should be invoked." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Data Quality Provider" NAME="dqprov" REQUIRED="true" VALUE="clean_employee" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Enter an XPath expression that will return one or more elements from the input document that will be used as input records when the data quality plan is invoked." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="XPath Expression" NAME="recordexpr" REQUIRED="true" VALUE="//clean_employee" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="If input document contains namespaces, the configured namespace map to be used when evaluating XPath expressions." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="XPath Namespace Map" NAME="nsmap" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="In output document, should the children of the record element be preserved, appending the result of the plan execution as new child elements, or should the original children be replaced with the plan results?" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combolist" LABEL="Replace or Preserve?" NAME="replace" REQUIRED="true" VALUE="Preserve" VALUETYPE="string"/>
+              </GROUP>
+              <GUIDS/>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+      </OBJECTS>
+      <RELATIONS STARTINSTANCE="1">
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="1" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="3">
+          <CUSTOMEVENTS/>
+        </RELATION>
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="3" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="2">
+          <CUSTOMEVENTS/>
+        </RELATION>
+      </RELATIONS>
+      <TEXTLABELS/>
+    </PROCESSFLOW>
+  </SERVER>
+  <GLOBALVARIABLES/>
+</IWAY>

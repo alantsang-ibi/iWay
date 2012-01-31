@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IWAY xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.iwaysoftware.com/designer/model">
+  <SERVER NAME="iWay Registry">
+    <PROCESSFLOW DESCRIPTION="" IWAYVERSION="6.1.1" NAME="employee_sync" TIMEOUT="0">
+      <OBJECTS>
+        <OBJECT CLASS="start" DESCRIPTION="Start Object" ETAP="false" ID="start" KEY="1" NAME="Start" POS_LEFT="34" POS_TOP="156" TYPE="FLOWCHART_STARTUP_START">
+          <USER>
+            <PROPERTIES>
+              <GROUP NAME="General">
+                <PROPERTYITEM DISPLAY="No" ITEMTYPE="boolean" LABEL="Debug" NAME="Debug" REQUIRED="false" VALUE="true" VALUETYPE="boolean"/>
+              </GROUP>
+            </PROPERTIES>
+          </USER>
+          <RUNTIMEVARIABLES/>
+        </OBJECT>
+        <OBJECT CLASS="end" CLASSNAME="" DEACTIVATE="false" DESCRIPTION="End Object" ETAP="false" KEY="2" NAME="End" POS_LEFT="670" POS_TOP="156" TYPE="FLOWCHART_STARTUP_END" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GUIDS/>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="agent" CLASSNAME="com.ibi.agents.XDAdapterAgent" DEACTIVATE="false" ETAP="false" ID="isdsrv12" KEY="4" NAME="isdsrv12" POS_LEFT="450" POS_TOP="156" TYPE="FLOWCHART_ADAPTER" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="General"/>
+              <GROUP NAME="Main">
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="containerUrl" REQUIRED="false" VALUE="http://localhost:9000" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="name" REQUIRED="false" VALUE="isdsrv12" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="target" REQUIRED="false" VALUE="PeopleSoft" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="descriptor" REQUIRED="false" VALUE="adapterData/4B4441D58071D33A2508070A16BEAB54/descriptor.xml" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="keys" REQUIRED="false" VALUE="adapterData/4B4441D58071D33A2508070A16BEAB54/keys.xml" VALUETYPE=""/>
+              </GROUP>
+              <GROUP NAME="User Defined"/>
+              <GUIDS>
+                <PROPERTYITEM GUID="4B4441D58071D33A2508070A16BEAB54" GUIDTYPE="adapter" NAME=""/>
+              </GUIDS>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="agent" CLASSNAME="com.ibi.agents.XDTransformAgent" DEACTIVATE="false" ETAP="false" ID="employee_dq_ps" KEY="3" NAME="employee_dq_ps" POS_LEFT="315" POS_TOP="156" TYPE="FLOWCHART_TRANSFORM" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="General">
+                <PROPERTYITEM DESCRIPTION="Type of transformation" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="engine" REQUIRED="false" VALUE="iway" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="Defined transform name to execute" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="transform" REQUIRED="false" VALUE="employee_dq_ps" VALUETYPE=""/>
+              </GROUP>
+              <GROUP NAME="User Defined"/>
+              <GUIDS>
+                <PROPERTYITEM GUID="3422D31EC6B6DDFD506D0E14239DD8B4" GUIDTYPE="transform" NAME="transform"/>
+              </GUIDS>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+      </OBJECTS>
+      <RELATIONS STARTINSTANCE="1">
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="4" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="2">
+          <CUSTOMEVENTS/>
+        </RELATION>
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="3" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="4">
+          <CUSTOMEVENTS/>
+        </RELATION>
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="1" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="3">
+          <CUSTOMEVENTS/>
+        </RELATION>
+      </RELATIONS>
+      <TEXTLABELS/>
+    </PROCESSFLOW>
+  </SERVER>
+  <GLOBALVARIABLES/>
+</IWAY>

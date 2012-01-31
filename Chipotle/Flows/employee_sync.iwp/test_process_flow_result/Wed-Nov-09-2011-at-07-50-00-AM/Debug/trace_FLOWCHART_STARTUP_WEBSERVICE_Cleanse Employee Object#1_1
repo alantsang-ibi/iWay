@@ -1,0 +1,44 @@
+Name=Cleanse Employee Object  Type=Agent  InEdge=OnCompletion  From=Start - Employee Update Event Triggered  Not nested
+Registers
+             doclocation         [SYS]   config
+             engine              [SYS]   CB41FF4570FB41B6C6C9771D3C2C508A
+     ADDED > iway.lastnode       [SYS]   Cleanse Employee Object
+             iway.pid            [SYS]   3988
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.139
+             iwayconfig          [SYS]   CB41FF4570FB41B6C6C9771D3C2C508A
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/CB41FF4570FB41B6C6C97...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   e7444ff6-6bc2-43a9-a52f-0c95459dd592
+Content of document
+	Form=xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://www.example.com/ws">
+   <soap:Body>
+      <ns1:clean_employeeResponse>
+         <ns1:ssn>999-99-9991</ns1:ssn>
+         <ns1:firstname>Bobby</ns1:firstname>
+         <ns1:lastname>Flay</ns1:lastname>
+         <ns1:street>1501 Wynkoop</ns1:street>
+         <ns1:city xsi:nil="true"/>
+         <ns1:state>co</ns1:state>
+         <ns1:zip>80202</ns1:zip>
+         <ns1:phone>(626)203-9137</ns1:phone>
+         <ns1:std_street>1501 WYNKOOP ST</ns1:std_street>
+         <ns1:std_city>DENVER</ns1:std_city>
+         <ns1:std_state>CO</ns1:std_state>
+         <ns1:std_zip>80202</ns1:std_zip>
+         <ns1:addr_status>INVALID</ns1:addr_status>
+         <ns1:addr_validity_level>STREET</ns1:addr_validity_level>
+         <ns1:addr_score>160</ns1:addr_score>
+         <ns1:addr_cleansing_code>AMBIGUOUS_BUILDING CITY_DETERMINED CITY_MISSING SN_INVALID STREET_TYPE_MISSING</ns1:addr_cleansing_code>
+         <ns1:std_phone>626.203.9137</ns1:std_phone>
+      </ns1:clean_employeeResponse>
+   </soap:Body>
+</soap:Envelope>

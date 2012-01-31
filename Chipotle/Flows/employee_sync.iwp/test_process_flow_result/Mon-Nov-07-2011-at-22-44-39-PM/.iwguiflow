@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IWAY xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.iwaysoftware.com/designer/model">
+  <SERVER NAME="iWay Registry">
+    <PROCESSFLOW DESCRIPTION="" IWAYVERSION="6.1.1" NAME="employee_sync" TIMEOUT="0">
+      <OBJECTS>
+        <OBJECT CLASS="start" DESCRIPTION="Start Object" ETAP="false" ID="start" KEY="1" NAME="Start" POS_LEFT="34" POS_TOP="156" TYPE="FLOWCHART_STARTUP_START">
+          <USER>
+            <PROPERTIES>
+              <GROUP NAME="General">
+                <PROPERTYITEM DISPLAY="No" ITEMTYPE="boolean" LABEL="Debug" NAME="Debug" REQUIRED="false" VALUE="true" VALUETYPE="boolean"/>
+              </GROUP>
+            </PROPERTIES>
+          </USER>
+          <RUNTIMEVARIABLES/>
+        </OBJECT>
+        <OBJECT CLASS="end" CLASSNAME="" DEACTIVATE="false" DESCRIPTION="End Object" ETAP="false" KEY="2" NAME="End" POS_LEFT="670" POS_TOP="156" TYPE="FLOWCHART_STARTUP_END" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GUIDS/>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="agent" CLASSNAME="com.ibi.agents.XDAdapterAgent" DEACTIVATE="false" ETAP="false" ID="isdsrv12" KEY="4" NAME="isdsrv12" POS_LEFT="450" POS_TOP="156" TYPE="FLOWCHART_ADAPTER" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="General"/>
+              <GROUP NAME="Main">
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="containerUrl" REQUIRED="false" VALUE="http://localhost:9000" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="name" REQUIRED="false" VALUE="isdsrv12" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="target" REQUIRED="false" VALUE="PeopleSoft" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="descriptor" REQUIRED="false" VALUE="adapterData/4B4441D58071D33A2508070A16BEAB54/descriptor.xml" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="keys" REQUIRED="false" VALUE="adapterData/4B4441D58071D33A2508070A16BEAB54/keys.xml" VALUETYPE=""/>
+              </GROUP>
+              <GROUP NAME="User Defined"/>
+              <GUIDS>
+                <PROPERTYITEM GUID="4B4441D58071D33A2508070A16BEAB54" GUIDTYPE="adapter" NAME=""/>
+              </GUIDS>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="agent" CLASSNAME="com.ibi.agents.XDTransformAgent" DEACTIVATE="false" ETAP="false" ID="employee_dq_ps" KEY="3" NAME="employee_dq_ps" POS_LEFT="315" POS_TOP="156" TYPE="FLOWCHART_TRANSFORM" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="General">
+                <PROPERTYITEM DESCRIPTION="Type of transformation" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="engine" REQUIRED="false" VALUE="iway" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="Defined transform name to execute" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="transform" REQUIRED="false" VALUE="employee_dq_ps" VALUETYPE=""/>
+              </GROUP>
+              <GROUP NAME="User Defined"/>
+              <GUIDS>
+                <PROPERTYITEM GUID="3422D31EC6B6DDFD506D0E14239DD8B4" GUIDTYPE="transform" NAME="transform"/>
+              </GUIDS>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="agent" CLASSNAME="com.ibi.agents.XDWSClientAgent" DEACTIVATE="false" DESCRIPTION="Web Service Object" ETAP="false" KEY="5" NAME="DQ" POS_LEFT="176" POS_TOP="155" TYPE="FLOWCHART_STARTUP_WEBSERVICE" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="General">
+                <PROPERTYITEM DISPLAY="No" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapheadertype" NAME="soapheadertype" REQUIRED="false" VALUE="&lt; Empty >" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="The Header of the WebService message. Can be a filename, transform, or actual data with SREG, XPATH, etc." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapheader" NAME="soapheader" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DISPLAY="No" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapbodytype" NAME="soapbodytype" REQUIRED="false" VALUE="&lt; Empty >" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="The Body of the WebService message. Can be a filename, transform, or actual data with SREG, XPATH, etc." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapbody" NAME="soapbody" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DISPLAY="No" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapresponsetype" NAME="soapresponsetype" REQUIRED="false" VALUE="&lt; Take No Action >" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Transformation for WebService Response" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapbody" NAME="soapresponse" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DISPLAY="No" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapfaulttype" NAME="soapfaulttype" REQUIRED="false" VALUE="&lt; Take No Action >" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Transformation or WebService response." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapfault" NAME="soapfault" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="If on, emit through proxy server" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combolist" LABEL="Proxy" NAME="proxy" REQUIRED="false" VALUE="false" VALUETYPE="boolean"/>
+                <PROPERTYITEM DESCRIPTION="Remove SOAP Envelope from Response Document." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combolist" LABEL="Strip Soap Envelope" NAME="soapenv" REQUIRED="false" VALUE="false" VALUETYPE="boolean"/>
+                <PROPERTYITEM DESCRIPTION="Network location where the web services has been deployed." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="END point" NAME="soapaddress" REQUIRED="true" VALUE="http://localhost:8888/clean_employee" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Value of SOAPAction header for HTTP." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="SOAP Action" NAME="soapaction" REQUIRED="false" VALUE="clean_employee" VALUETYPE="string"/>
+              </GROUP>
+              <GUIDS/>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+              <WSDL>
+                <PROPERTYITEM LACATION="http://localhost:8888/clean_employee?wsdl" SERVICE="Clean_employee"/>
+              </WSDL>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+      </OBJECTS>
+      <RELATIONS STARTINSTANCE="1">
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="4" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="2">
+          <CUSTOMEVENTS/>
+        </RELATION>
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="3" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="4">
+          <CUSTOMEVENTS/>
+        </RELATION>
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="1" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="5">
+          <CUSTOMEVENTS/>
+        </RELATION>
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="5" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="3">
+          <CUSTOMEVENTS/>
+        </RELATION>
+      </RELATIONS>
+      <TEXTLABELS/>
+    </PROCESSFLOW>
+  </SERVER>
+  <GLOBALVARIABLES/>
+</IWAY>

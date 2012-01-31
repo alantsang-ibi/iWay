@@ -1,0 +1,18 @@
+Name=Start  Type=Start  InEdge=success  From=begin  Not nested
+Registers
+     ADDED > doclocation         [SYS]   config
+     ADDED > engine              [SYS]   35AA5996AC19301E59D98B4FA2614639
+     ADDED > iway.pid            [SYS]   556
+     ADDED > iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+     ADDED > iway.serverhost     [SYS]   INFORMA-F7T131V
+     ADDED > iway.serverip       [SYS]   192.168.122.1
+     ADDED > iwayconfig          [SYS]   35AA5996AC19301E59D98B4FA2614639
+     ADDED > iwayhome            [SYS]   C:/iway611/
+     ADDED > iwayversion         [SYS]   6.1.1
+     ADDED > iwayworkdir         [SYS]   C:/iway611/config/35AA5996AC19301E59D98...[50]
+     ADDED > locale              [SYS]   en_us
+     ADDED > name                [SYS]   ExecProcess
+     ADDED > protocol            [SYS]   Lcl
+     ADDED > iway.flowname       [DOC]   flowTest
+     ADDED > tid                 [DOC]   04d4e7a9-3e27-4b20-9543-5505b73720cb
+Object type does not support document display

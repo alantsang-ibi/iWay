@@ -1,0 +1,245 @@
+system name is: 9C1DE86F6B39CD3F27522C5E14A24300
+'C:\iway611\config\config.xml' has not change since the last backup.
+Generic XPath iFL functions use iWay's abbreviated syntax
+XPath 1.0 iFL functions use iWay's full syntax implementation
+[threadPool] Starting pool threads....
+[threadPool] Started pool with '1' threads.
+Found adapter 'IWAF'
+Found adapter 'CICS'
+Found adapter 'DOTNET'
+Found adapter 'EDI'
+Found adapter 'IMS'
+Found adapter 'iWay'
+Found adapter 'Java'
+Found adapter 'JDEdwards One World'
+Found adapter 'JDEWorld'
+Found adapter 'LDAP'
+Found adapter 'LogListener'
+Found adapter 'MSMQ'
+Found adapter 'MUMPS'
+Found adapter 'Oracle'
+Found adapter 'PeopleSoft'
+Found adapter 'RDBMS'
+Found adapter 'Salesforce'
+Found adapter 'Siebel'
+Found adapter 'SWIFT'
+Debug: Try to load class:com.ibi.ldap.LdapEventAdapter
+Loaded locale:
+Processing descriptor definition :<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+  <option title="event_messageTitle">
+    <group title="event_standard">
+      <param name="factory" required="true" label="label" type="string" description="Ldap Connection Factory" default="com.sun.jndi.ldap.LdapCtxFactory"/>
+      <param name="url" required="true" label="label" type="string" description="Ldap Connection Url"/>
+      <param name="auth" required="true" label="label" type="string" description="Ldap Authentication Mechanism" default="simple"/>
+      <param name="user" required="true" label="label" type="string" description="Ldap Connection Principal"/>
+      <param name="password" required="true" label="label" type="passwd" description="Ldap Connection Credentials"/>
+      <param name="baseDN" required="true" label="label" type="string" description="Ldap Base Context"/>
+      <param name="protocol" required="true" label="label" type="enum" description="Ldap Protocol Version" enum="LDAP v2,LDAP v3" default="LDAP v3"/>
+      <param name="referral" required="true" label="label" type="enum" description="Ldap Referrals Handling" enum="ignore,follow" default="ignore"/>
+    </group>
+    <group title="event_basicconfig">
+      <param name="pollinterval" required="true" label="label" type="string" description="Polling Interval for Directory Sync (ms)" default="0"/>
+      <param name="eventstrategy" required="true" label="label" type="enum" description="Event Generation Strategy" enum="Active Directory Synchronization,Asynchronous Ldap Notification" default="Active Directory Synchronization"/>
+      <param name="eventsearchfilter" required="true" label="label" type="string" description="Search Filter" default=""/>
+    </group>
+    <group title="event_typeconfig">
+      <param name="add_event" required="true" label="label" type="boolean" description="Monitor Add Event" default="true"/>
+      <param name="update_event" required="true" label="label" type="boolean" description="Monitor Update Event" default="true"/>
+      <param name="delete_event" required="true" label="label" type="boolean" description="Monitor Delete Event" default="true"/>
+      <param name="rename_event" required="true" label="label" type="boolean" description="Monitor Rename Event" default="true"/>
+      <param name="eventfilterargs" required="false" label="label" type="string" description="List of Attributes to be monitored" default=""/>
+    </group>
+  </option>
+</descriptor>
+
+
+Descriptor definition is missing the template attribute. Fine if not a shim
+Debug: Try to load class:com.ibi.iwloglistener.LogListenerInboundAdapter
+LogListenerAdapter.init() com.ibi.iwloglistener.LogListenerInboundAdapter@7c1ca057
+Unknown configuration [location]: 9C1DE86F6B39CD3F27522C5E14A24300
+Exception when adding exits to the dictionary: XD[FAIL] cause: 1 subcause: 0 message: Unknown configuration [location]: 9C1DE86F6B39CD3F27522C5E14A24300
+Encoding from iflows context is: UTF-8
+[threadPool] Starting pool threads....
+[threadPool] Started pool with '1' threads.
+Found adapter 'IWAF'
+Found adapter 'CICS'
+Found adapter 'DOTNET'
+Found adapter 'EDI'
+Found adapter 'IMS'
+Found adapter 'iWay'
+Found adapter 'Java'
+Found adapter 'JDEdwards One World'
+Found adapter 'JDEWorld'
+Found adapter 'LDAP'
+Found adapter 'LogListener'
+Found adapter 'MSMQ'
+Found adapter 'MUMPS'
+Found adapter 'Oracle'
+Found adapter 'PeopleSoft'
+Found adapter 'RDBMS'
+Found adapter 'Salesforce'
+Found adapter 'Siebel'
+Found adapter 'SWIFT'
+Debug: Try to load class:com.ibi.ldap.LdapEventAdapter
+Loaded locale:
+Processing descriptor definition :<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+  <option title="event_messageTitle">
+    <group title="event_standard">
+      <param name="factory" required="true" label="label" type="string" description="Ldap Connection Factory" default="com.sun.jndi.ldap.LdapCtxFactory"/>
+      <param name="url" required="true" label="label" type="string" description="Ldap Connection Url"/>
+      <param name="auth" required="true" label="label" type="string" description="Ldap Authentication Mechanism" default="simple"/>
+      <param name="user" required="true" label="label" type="string" description="Ldap Connection Principal"/>
+      <param name="password" required="true" label="label" type="passwd" description="Ldap Connection Credentials"/>
+      <param name="baseDN" required="true" label="label" type="string" description="Ldap Base Context"/>
+      <param name="protocol" required="true" label="label" type="enum" description="Ldap Protocol Version" enum="LDAP v2,LDAP v3" default="LDAP v3"/>
+      <param name="referral" required="true" label="label" type="enum" description="Ldap Referrals Handling" enum="ignore,follow" default="ignore"/>
+    </group>
+    <group title="event_basicconfig">
+      <param name="pollinterval" required="true" label="label" type="string" description="Polling Interval for Directory Sync (ms)" default="0"/>
+      <param name="eventstrategy" required="true" label="label" type="enum" description="Event Generation Strategy" enum="Active Directory Synchronization,Asynchronous Ldap Notification" default="Active Directory Synchronization"/>
+      <param name="eventsearchfilter" required="true" label="label" type="string" description="Search Filter" default=""/>
+    </group>
+    <group title="event_typeconfig">
+      <param name="add_event" required="true" label="label" type="boolean" description="Monitor Add Event" default="true"/>
+      <param name="update_event" required="true" label="label" type="boolean" description="Monitor Update Event" default="true"/>
+      <param name="delete_event" required="true" label="label" type="boolean" description="Monitor Delete Event" default="true"/>
+      <param name="rename_event" required="true" label="label" type="boolean" description="Monitor Rename Event" default="true"/>
+      <param name="eventfilterargs" required="false" label="label" type="string" description="List of Attributes to be monitored" default=""/>
+    </group>
+  </option>
+</descriptor>
+
+
+Descriptor definition is missing the template attribute. Fine if not a shim
+Debug: Try to load class:com.ibi.iwloglistener.LogListenerInboundAdapter
+LogListenerAdapter.init() com.ibi.iwloglistener.LogListenerInboundAdapter@bee0741
+Encoding from ExecProcess context is: UTF-8
+[threadPool] Starting pool threads....
+[threadPool] Started pool with '1' threads.
+Found adapter 'IWAF'
+Found adapter 'CICS'
+Found adapter 'DOTNET'
+Found adapter 'EDI'
+Found adapter 'IMS'
+Found adapter 'iWay'
+Found adapter 'Java'
+Found adapter 'JDEdwards One World'
+Found adapter 'JDEWorld'
+Found adapter 'LDAP'
+Found adapter 'LogListener'
+Found adapter 'MSMQ'
+Found adapter 'MUMPS'
+Found adapter 'Oracle'
+Found adapter 'PeopleSoft'
+Found adapter 'RDBMS'
+Found adapter 'Salesforce'
+Found adapter 'Siebel'
+Found adapter 'SWIFT'
+Debug: Try to load class:com.ibi.ldap.LdapEventAdapter
+Loaded locale:
+Processing descriptor definition :<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+  <option title="event_messageTitle">
+    <group title="event_standard">
+      <param name="factory" required="true" label="label" type="string" description="Ldap Connection Factory" default="com.sun.jndi.ldap.LdapCtxFactory"/>
+      <param name="url" required="true" label="label" type="string" description="Ldap Connection Url"/>
+      <param name="auth" required="true" label="label" type="string" description="Ldap Authentication Mechanism" default="simple"/>
+      <param name="user" required="true" label="label" type="string" description="Ldap Connection Principal"/>
+      <param name="password" required="true" label="label" type="passwd" description="Ldap Connection Credentials"/>
+      <param name="baseDN" required="true" label="label" type="string" description="Ldap Base Context"/>
+      <param name="protocol" required="true" label="label" type="enum" description="Ldap Protocol Version" enum="LDAP v2,LDAP v3" default="LDAP v3"/>
+      <param name="referral" required="true" label="label" type="enum" description="Ldap Referrals Handling" enum="ignore,follow" default="ignore"/>
+    </group>
+    <group title="event_basicconfig">
+      <param name="pollinterval" required="true" label="label" type="string" description="Polling Interval for Directory Sync (ms)" default="0"/>
+      <param name="eventstrategy" required="true" label="label" type="enum" description="Event Generation Strategy" enum="Active Directory Synchronization,Asynchronous Ldap Notification" default="Active Directory Synchronization"/>
+      <param name="eventsearchfilter" required="true" label="label" type="string" description="Search Filter" default=""/>
+    </group>
+    <group title="event_typeconfig">
+      <param name="add_event" required="true" label="label" type="boolean" description="Monitor Add Event" default="true"/>
+      <param name="update_event" required="true" label="label" type="boolean" description="Monitor Update Event" default="true"/>
+      <param name="delete_event" required="true" label="label" type="boolean" description="Monitor Delete Event" default="true"/>
+      <param name="rename_event" required="true" label="label" type="boolean" description="Monitor Rename Event" default="true"/>
+      <param name="eventfilterargs" required="false" label="label" type="string" description="List of Attributes to be monitored" default=""/>
+    </group>
+  </option>
+</descriptor>
+
+
+Descriptor definition is missing the template attribute. Fine if not a shim
+Debug: Try to load class:com.ibi.iwloglistener.LogListenerInboundAdapter
+LogListenerAdapter.init() com.ibi.iwloglistener.LogListenerInboundAdapter@4aa1468b
+start recognized at 1
+end recognized at 2
+There are 2 relations
+building fresh agents
+No flow timeout specified, so default of 10 seconds has been set for this test. To change, set a specific flow timeout property.
+setting flow variable xtrack=full
+setting flow variable Debug=true
+setting flow variable timeout=0
+setting flow variable debug=null
+node Start returned edges: success
+WSClient Post: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><SOAP-ENV:Body><clean_employee><ssn>999-99-9999</ssn><firstname>Alan</firstname><lastname>Tsang</lastname><street>608 Sefton Ave</street><city>monterey park</city><state>ca</state><zip>91755</zip></clean_employee></SOAP-ENV:Body></SOAP-ENV:Envelope>
+data length: 485
+HTTPPoster opening regular connection: {host=localhost, port=8888}
+header line: 'http/1.0 500 internal server error'
+native error: 500
+header line: 'connection: close'
+header line: 'pragma: no-cache'
+header line: 'cache-control: no-cache'
+header line: 'content-type: text/xml; charset=utf-8'
+end of headers hit
+no content length received, reading until end of stream
+HTTP response: <?xml version='1.0' encoding='UTF-8'?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Client</faultcode>
+      <faultstring>Exactly one element of name clean_employee is required.</faultstring>
+      <detail xmlns:e="http://www.ataccama.com/ws/error">
+        <e:error>
+          <e:code>com.ataccama.dqc.online.dataaccessor.ParseException</e:code>
+          <e:arguments>Exactly one element of name clean_employee is required.</e:arguments>
+          <e:detailMessage>com.ataccama.dqc.online.soap.SOAPException: Exactly one element of name clean_employee is required.
+	at com.ataccama.dqc.online.io.SoapReceiver.handleRequest(SoapReceiver.java:145)
+	at com.ataccama.dqc.online.soap.SoapDispatcher.handleSoapRequest(SoapDispatcher.java:172)
+	at com.ataccama.dqc.online.soap.SoapDispatcher.handleRequest(SoapDispatcher.java:71)
+	at com.ataccama.dqc.web.FilterChainImpl.doFilter(FilterChainImpl.java:33)
+	at com.ataccama.dqc.web.filters.AuthorizationFilter.doFilter(AuthorizationFilter.java:77)
+	at com.ataccama.dqc.web.FilterChainImpl.doFilter(FilterChainImpl.java:31)
+	at com.ataccama.dqc.web.HttpListener$HandleRequestTask.run(HttpListener.java:449)
+	at com.ataccama.dqc.commons.util.ThreadPool$PoolWorker.run(ThreadPool.java:197)
+Caused by: com.ataccama.dqc.online.dataaccessor.ParseException: Exactly one element of name clean_employee is required.
+	at com.ataccama.dqc.online.dataaccessor.SingleRequiredStrategy.readData(SingleRequiredStrategy.java:26)
+	at com.ataccama.dqc.online.dataaccessor.StructProperty.readXml(StructProperty.java:109)
+	at com.ataccama.dqc.online.XmlDataParser.parseData(XmlDataParser.java:65)
+	at com.ataccama.dqc.online.io.SoapDataParser.parseData(SoapDataParser.java:63)
+	at com.ataccama.dqc.online.io.BaseReceiver.execute(BaseReceiver.java:92)
+	at com.ataccama.dqc.online.io.SoapReceiver.handleRequest(SoapReceiver.java:139)
+	... 7 more
+</e:detailMessage>
+        </e:error>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+response content-type: text/xml; charset=UTF-8
+node Web Service returned edges: Standard SOAP fault, Exactly one element of name clean_employee is required., fail_operation
+Pflow thread stopping at End
+Ending pflow, number of subthreads still running=0
+back from pflow, doc count=4
+commit is set to TRUE; pflow will be COMMITTED
+Issuing local transaction commit
+shutting down system scheduler
+system scheduler stopped
+terminating pools
+Stopping the application manager
+Tearing down XDManager
+shutting down system scheduler
+system scheduler stopped
+enter stopall fromChild=false state=inactive
+already stopped[2]...; state=inactive
+console master stopped
+providers terminated

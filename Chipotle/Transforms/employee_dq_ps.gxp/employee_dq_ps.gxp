@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+    <Template>
+        <TransformTemplate>
+            <TemplateMetadata>
+                <ModifiedDate>Nov 7, 2011</ModifiedDate>
+            </TemplateMetadata>
+            <CustomerExtensions>
+                <ProcessingInstruction/>
+                <NamespaceDeclaration/>
+            </CustomerExtensions>
+            <Mapping>
+                <Input format="XML" >
+                    <Parameter name="Namespace"  value="true" />
+                    <Parameter name="Trim"  value="false" />
+                    <Parameter name="Validate"  value="false" />
+                </Input>
+                <Output format="XML" >
+                    <Parameter name="Namespace"  value="true" />
+                    <Parameter name="Indent"  value="4" />
+                    <Parameter name="NullTag"  value="true" />
+                    <Parameter name="encoding"  value="UTF-8" />
+                    <Parameter name="Declaration"  value="true" />
+                    <Parameter name="Footer"  value="" />
+                    <Parameter name="Header"  value="" />
+                </Output>
+                <MapStructure>
+                    <Table>
+                        <Rules>
+                            <MapRule  input="@PARENT()"  output="PS8" />
+                                <MapRule  input="'CI_PERSONAL_DATA'"  output="component" />
+                                    <MapRule  input="'insert'"  output="component@perform" />
+                                <MapRule  input="@CONCAT('IW_AT_',@RIGHT(Envelope/Body/clean_employeeResponse/ssn,'2'))"  output="key" />
+                                    <MapRule  input="'KEYPROP_EMPLID'"  output="key@name" />
+                                <MapRule  input="@CONCAT('IW_AT_',@RIGHT(Envelope/Body/clean_employeeResponse/ssn,'2'))"  output="PROP_EMPLID" />
+                                <MapRule  input="'11/11/1992'"  output="PROP_BIRTHDATE" />
+                                <MapRule  input="'USA'"  output="PROP_BIRTHPLACE" />
+                                <MapRule  input="'USA'"  output="PROP_BIRTHCOUNTRY" />
+                                <MapRule  input="'CA'"  output="PROP_BIRTHSTATE" />
+                                <MapRule  input=""  output="PROP_DT_OF_DEATH" />
+                                <MapRule  input="'N'"  output="PROP_DERIVED_EMP" />
+                                <MapRule  input="'Y'"  output="PROP_DERIVED_CWR" />
+                                <MapRule  input="'N'"  output="PROP_DERIVED_POI" />
+                                <MapRule  input=""  output="PROP_POI_TYPE" />
+                                <MapRule  input="'N'"  output="PROP_WAIVE_DATA_PROTECT" />
+                                <MapRule  input="'N'"  output="PROP_CAN_ABORIGINAL" />
+                                <MapRule  input="'N'"  output="PROP_CAN_VISBL_MINORITY" />
+                                <MapRule  input=""  output="PROP_ETHNIC_GRP_CD_UK" />
+                                <MapRule  input=""  output="PROP_NI_COMMUNITY_BG" />
+                                <MapRule  input=""  output="PROP_NI_CB_DET_METHOD" />
+                                <MapRule  input=""  output="PROP_NI_CB_DET_DATE" />
+                                <MapRule  input=""  output="EXP_RETIRE_DT" />
+                                <MapRule  input="@PARENT()"  output="COLL_NAME_TYPE_VW" />
+                                    <MapRule  input="'insert'"  output="COLL_NAME_TYPE_VW@action" />
+                                    <MapRule  input="'1'"  output="COLL_NAME_TYPE_VW@row" />
+                                    <MapRule  input="'PRI'"  output="KEYPROP_NAME_TYPE" />
+                                    <MapRule  input="@PARENT()"  output="COLL_NAMES" />
+                                        <MapRule  input="'insert'"  output="COLL_NAMES@action" />
+                                        <MapRule  input="'1'"  output="COLL_NAMES@row" />
+                                        <MapRule  input="'PRI'"  output="KEYPROP_NAME_TYPE" />
+                                        <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                        <MapRule  input="'001'"  output="PROP_COUNTRY_NM_FORMAT" />
+                                        <MapRule  input=""  output="PROP_NAME_INITIALS" />
+                                        <MapRule  input=""  output="PROP_NAME_PREFIX" />
+                                        <MapRule  input=""  output="PROP_NAME_SUFFIX" />
+                                        <MapRule  input=""  output="PROP_NAME_ROYAL_PREFIX" />
+                                        <MapRule  input=""  output="PROP_NAME_ROYAL_SUFFIX" />
+                                        <MapRule  input=""  output="PROP_NAME_TITLE" />
+                                        <MapRule  input="Envelope/Body/clean_employeeResponse/lastname"  output="PROP_LAST_NAME" />
+                                        <MapRule  input="Envelope/Body/clean_employeeResponse/firstname"  output="PROP_FIRST_NAME" />
+                                        <MapRule  input=""  output="PROP_MIDDLE_NAME" />
+                                        <MapRule  input=""  output="PROP_SECOND_LAST_NAME" />
+                                        <MapRule  input=""  output="PROP_NAME_AC" />
+                                        <MapRule  input="'1'"  output="PROP_PREF_FIRST_NAME" />
+                                        <MapRule  input=""  output="PROP_PARTNER_LAST_NAME" />
+                                        <MapRule  input=""  output="PROP_PARTNER_ROY_PREFIX" />
+                                        <MapRule  input=""  output="PROP_LAST_NAME_PREF_NLD" />
+                                    <MapRule output="COLL_NAMES" input="@ENDPARENT()"/>
+                                <MapRule output="COLL_NAME_TYPE_VW" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_EFFDT" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_DATA_EFFDT@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_DATA_EFFDT@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input="'M'"  output="PROP_MAR_STATUS" />
+                                    <MapRule  input="'11/07/2011'"  output="PROP_MAR_STATUS_DT" />
+                                    <MapRule  input="'M'"  output="PROP_SEX" />
+                                    <MapRule  input="'G'"  output="PROP_HIGHEST_EDUC_LVL" />
+                                    <MapRule  input="'N'"  output="PROP_FT_STUDENT" />
+                                    <MapRule  input=""  output="PROP_LANG_CD" />
+                                    <MapRule  input=""  output="PROP_ALTER_EMPLID" />
+                                    <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_USF" />
+                                        <MapRule  input="'insert'"  output="COLL_PERS_DATA_USF@action" />
+                                        <MapRule  input="'1'"  output="COLL_PERS_DATA_USF@row" />
+                                        <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                        <MapRule  input=""  output="PROP_GVT_CRED_MIL_SVCE" />
+                                        <MapRule  input=""  output="PROP_GVT_MILITARY_COMP" />
+                                        <MapRule  input=""  output="PROP_GVT_MIL_GRADE" />
+                                        <MapRule  input=""  output="PROP_GVT_MIL_RESRVE_CAT" />
+                                        <MapRule  input=""  output="PROP_GVT_MIL_SEP_RET" />
+                                        <MapRule  input=""  output="PROP_GVT_MIL_SVCE_END" />
+                                        <MapRule  input=""  output="PROP_GVT_MIL_SVCE_START" />
+                                        <MapRule  input=""  output="PROP_GVT_MIL_VERIFY" />
+                                        <MapRule  input="'0'"  output="PROP_GVT_PAR_NBR_LAST" />
+                                        <MapRule  input=""  output="PROP_GVT_UNIF_SVC_CTR" />
+                                        <MapRule  input=""  output="PROP_GVT_VET_PREF_APPT" />
+                                        <MapRule  input="'N'"  output="PROP_GVT_VET_PREF_RIF" />
+                                        <MapRule  input=""  output="PROP_GVT_CHANGE_FLAG" />
+                                        <MapRule  input=""  output="PROP_GVT_DRAFT_STATUS" />
+                                        <MapRule  input=""  output="PROP_GVT_YR_ATTAINED" />
+                                        <MapRule  input=""  output="PROP_DISABLED_VET" />
+                                        <MapRule  input="'N'"  output="PROP_DISABLED" />
+                                        <MapRule  input=""  output="PROP_GVT_DISABILITY_CD" />
+                                        <MapRule  input=""  output="PROP_GRADE" />
+                                        <MapRule  input="'0000'"  output="PROP_SAL_ADMIN_PLAN" />
+                                        <MapRule  input="'N'"  output="PROP_GVT_CURR_AGCY_EMPL" />
+                                        <MapRule  input="'N'"  output="PROP_GVT_CURR_FED_EMPL" />
+                                        <MapRule  input=""  output="PROP_GVT_HIGH_PAY_PLAN" />
+                                        <MapRule  input=""  output="PROP_GVT_HIGH_GRADE" />
+                                        <MapRule  input="'N'"  output="PROP_GVT_PREV_AGCY_EMPL" />
+                                        <MapRule  input="'N'"  output="PROP_GVT_PREV_FED_EMPL" />
+                                        <MapRule  input=""  output="PROP_GVT_SEP_INCENTIVE" />
+                                        <MapRule  input=""  output="PROP_GVT_SEP_INCENT_DT" />
+                                        <MapRule  input=""  output="PROP_GVT_TENURE" />
+                                        <MapRule  input=""  output="PROP_GVT_PAY_PLAN" />
+                                        <MapRule  input=""  output="PROP_BARG_UNIT" />
+                                    <MapRule output="COLL_PERS_DATA_USF" input="@ENDPARENT()"/>
+                                <MapRule output="COLL_PERS_DATA_EFFDT" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_NID" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_NID@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_NID@row" />
+                                    <MapRule  input="'USA'"  output="KEYPROP_COUNTRY" />
+                                    <MapRule  input="'PR'"  output="KEYPROP_NATIONAL_ID_TYPE" />
+                                    <MapRule  input="''"  output="PROP_SSN_KEY_FRA" />
+                                    <MapRule  input="'Y'"  output="PROP_PRIMARY_NID" />
+                                    <MapRule  input="'N'"  output="PROP_TAX_REF_ID_SGP" />
+                                    <MapRule  input="Envelope/Body/clean_employeeResponse/ssn"  output="PROP_NATIONAL_ID" />
+                                    <MapRule  input=""  output="PROP_EXPIRY_DATE" />
+                                <MapRule output="COLL_PERS_NID" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_ADDRESS_TYPE_VW" />
+                                    <MapRule  input="'insert'"  output="COLL_ADDRESS_TYPE_VW@action" />
+                                    <MapRule  input="'1'"  output="COLL_ADDRESS_TYPE_VW@row" />
+                                    <MapRule  input="'HOME'"  output="KEYPROP_ADDRESS_TYPE" />
+                                    <MapRule  input="@PARENT()"  output="COLL_ADDRESSES" />
+                                        <MapRule  input="'insert'"  output="COLL_ADDRESSES@action" />
+                                        <MapRule  input="'1'"  output="COLL_ADDRESSES@row" />
+                                        <MapRule  input="'HOME'"  output="KEYPROP_ADDRESS_TYPE" />
+                                        <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                        <MapRule  input="'A'"  output="PROP_EFF_STATUS" />
+                                        <MapRule  input="'USA'"  output="PROP_COUNTRY" />
+                                        <MapRule  input="Envelope/Body/clean_employeeResponse/std_street"  output="PROP_ADDRESS1" />
+                                        <MapRule  input=""  output="PROP_ADDRESS2" />
+                                        <MapRule  input=""  output="PROP_ADDRESS3" />
+                                        <MapRule  input=""  output="PROP_ADDRESS4" />
+                                        <MapRule  input="Envelope/Body/clean_employeeResponse/std_city"  output="PROP_CITY" />
+                                        <MapRule  input=""  output="PROP_NUM1" />
+                                        <MapRule  input=""  output="PROP_NUM2" />
+                                        <MapRule  input=""  output="PROP_HOUSE_TYPE" />
+                                        <MapRule  input=""  output="PROP_ADDR_FIELD1" />
+                                        <MapRule  input=""  output="PROP_ADDR_FIELD2" />
+                                        <MapRule  input=""  output="PROP_ADDR_FIELD3" />
+                                        <MapRule  input=""  output="PROP_COUNTY" />
+                                        <MapRule  input="Envelope/Body/clean_employeeResponse/std_state"  output="PROP_STATE" />
+                                        <MapRule  input=""  output="PROP_GEO_CODE" />
+                                        <MapRule  input=""  output="PROP_IN_CITY_LIMIT" />
+                                        <MapRule  input=""  output="PROP_ADDRESS1_AC" />
+                                        <MapRule  input=""  output="PROP_ADDRESS2_AC" />
+                                        <MapRule  input=""  output="PROP_ADDRESS3_AC" />
+                                        <MapRule  input="Envelope/Body/clean_employeeResponse/std_zip"  output="PROP_POSTAL" />
+                                        <MapRule  input=""  output="PROP_CITY_AC" />
+                                        <MapRule  input=""  output="PROP_REG_REGION" />
+                                    <MapRule output="COLL_ADDRESSES" input="@ENDPARENT()"/>
+                                <MapRule output="COLL_ADDRESS_TYPE_VW" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERSONAL_PHONE" />
+                                    <MapRule  input="'insert'"  output="COLL_PERSONAL_PHONE@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERSONAL_PHONE@row" />
+                                    <MapRule  input="'CELL'"  output="KEYPROP_PHONE_TYPE" />
+                                    <MapRule  input=""  output="PROP_COUNTRY_CODE" />
+                                    <MapRule  input="Envelope/Body/clean_employeeResponse/std_phone"  output="PROP_PHONE" />
+                                    <MapRule  input=""  output="PROP_EXTENSION" />
+                                    <MapRule  input="'Y'"  output="PROP_PREF_PHONE_FLAG" />
+                                <MapRule output="COLL_PERSONAL_PHONE" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_EMAIL_ADDRESSES" />
+                                    <MapRule  input="'insert'"  output="COLL_EMAIL_ADDRESSES@action" />
+                                    <MapRule  input="'1'"  output="COLL_EMAIL_ADDRESSES@row" />
+                                    <MapRule  input="'BUSN'"  output="KEYPROP_E_ADDR_TYPE" />
+                                    <MapRule  input="'alan_tsang@ibi.com'"  output="PROP_EMAIL_ADDR" />
+                                    <MapRule  input="'Y'"  output="PROP_PREF_EMAIL_FLAG" />
+                                <MapRule output="COLL_EMAIL_ADDRESSES" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_DIVERS_ETHNIC" />
+                                    <MapRule  input="'insert'"  output="COLL_DIVERS_ETHNIC@action" />
+                                    <MapRule  input="'1'"  output="COLL_DIVERS_ETHNIC@row" />
+                                    <MapRule  input="'USA'"  output="KEYPROP_REG_REGION" />
+                                    <MapRule  input=""  output="KEYPROP_ETHNIC_GRP_CD" />
+                                    <MapRule  input="'N'"  output="PROP_PRIMARY_INDICATOR" />
+                                <MapRule output="COLL_DIVERS_ETHNIC" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_DIVERS_RELIGION" />
+                                    <MapRule  input="'insert'"  output="COLL_DIVERS_RELIGION@action" />
+                                    <MapRule  input="'1'"  output="COLL_DIVERS_RELIGION@row" />
+                                    <MapRule  input="'USA'"  output="KEYPROP_REG_REGION" />
+                                    <MapRule  input=""  output="PROP_RELIGION_CD" />
+                                    <MapRule  input=""  output="PROP_BLOOD_TYPE" />
+                                <MapRule output="COLL_DIVERS_RELIGION" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERSON_BRA" />
+                                    <MapRule  input="'insert'"  output="COLL_PERSON_BRA@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERSON_BRA@row" />
+                                    <MapRule  input=""  output="PROP_RG_ISSUEDBY_BRA" />
+                                    <MapRule  input=""  output="PROP_RG_ISSUED_DT_BRA" />
+                                    <MapRule  input=""  output="PROP_RG_STATE_BRA" />
+                                    <MapRule  input=""  output="PROP_CTPS_SERIES_BRA" />
+                                    <MapRule  input=""  output="PROP_CTPS_EXP_DT_BRA" />
+                                    <MapRule  input=""  output="PROP_CTPS_STATE_BRA" />
+                                    <MapRule  input=""  output="PROP_VOTER_ZONE_BRA" />
+                                    <MapRule  input=""  output="PROP_VOTER_SECTION_BRA" />
+                                    <MapRule  input=""  output="PROP_VOTER_CITY_BRA" />
+                                    <MapRule  input=""  output="PROP_VOTER_STATE_BRA" />
+                                    <MapRule  input=""  output="PROP_MILITAR_SERIES_BRA" />
+                                    <MapRule  input=""  output="PROP_MILITAR_REGION_BRA" />
+                                    <MapRule  input=""  output="PROP_MILITAR_STATE_BRA" />
+                                    <MapRule  input=""  output="PROP_MIL_CERT_TYPE_BRA" />
+                                    <MapRule  input=""  output="PROP_MILITAR_CAT_BRA" />
+                                    <MapRule  input=""  output="PROP_PIS_PASEP_DT_BRA" />
+                                <MapRule output="COLL_PERSON_BRA" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_BRA" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_DATA_BRA@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_DATA_BRA@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input=""  output="PROP_REG_REGION" />
+                                    <MapRule  input=""  output="PROP_ETHNIC_GRP_CD" />
+                                    <MapRule  input=""  output="PROP_NATIONALITY_CD_BRA" />
+                                    <MapRule  input=""  output="PROP_EDUCATION_LVL_BRA" />
+                                    <MapRule  input=""  output="PROP_SETID" />
+                                    <MapRule  input="'U'"  output="PROP_BLOOD_TYPE" />
+                                <MapRule output="COLL_PERS_DATA_BRA" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_CAN" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_DATA_CAN@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_DATA_CAN@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input=""  output="PROP_BILINGUALISM_CODE" />
+                                    <MapRule  input=""  output="PROP_HEALTH_CARE_NBR" />
+                                    <MapRule  input=""  output="PROP_HEALTH_CARE_STATE" />
+                                <MapRule output="COLL_PERS_DATA_CAN" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_SMOKER" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_SMOKER@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_SMOKER@row" />
+                                    <MapRule  input=""  output="KEYPROP_SMOKER_DT" />
+                                    <MapRule  input=""  output="PROP_SMOKER" />
+                                <MapRule output="COLL_PERS_SMOKER" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_CHE" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_DATA_CHE@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_DATA_CHE@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input=""  output="PROP_GUARDIAN_CHE" />
+                                <MapRule output="COLL_PERS_DATA_CHE" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PLACE_ORIG_CHE" />
+                                    <MapRule  input="'insert'"  output="COLL_PLACE_ORIG_CHE@action" />
+                                    <MapRule  input="'1'"  output="COLL_PLACE_ORIG_CHE@row" />
+                                    <MapRule  input=""  output="PROP_ORIGIN_CHE" />
+                                    <MapRule  input="'N'"  output="PROP_MAIN_ORIG_CHE" />
+                                <MapRule output="COLL_PLACE_ORIG_CHE" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_HUKOU_CHN" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_HUKOU_CHN@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_HUKOU_CHN@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input=""  output="KEYPROP_HUKOU_TYPE_CHN" />
+                                    <MapRule  input=""  output="KEYPROP_CONTRIB_AREA_CHN" />
+                                <MapRule output="COLL_PERS_HUKOU_CHN" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_WRKLIF_CHN" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_WRKLIF_CHN@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_WRKLIF_CHN@row" />
+                                    <MapRule  input=""  output="KEYPROP_START_DT_CHN" />
+                                <MapRule output="COLL_PERS_WRKLIF_CHN" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_WRKLV_CHN" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_WRKLV_CHN@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_WRKLV_CHN@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input=""  output="PROP_WRKLV_STATUS_CHN" />
+                                    <MapRule  input=""  output="PROP_DT_ISSUED" />
+                                    <MapRule  input=""  output="PROP_WRKLV_RENEW_DT_CHN" />
+                                    <MapRule  input=""  output="PROP_EXPIRATN_DT" />
+                                <MapRule output="COLL_PERS_WRKLV_CHN" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_DEU" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_DATA_DEU@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_DATA_DEU@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input=""  output="PROP_MILITARY_STAT_GER" />
+                                    <MapRule  input=""  output="PROP_EXPCTD_MILITARY_DT" />
+                                    <MapRule  input=""  output="PROP_HR_RESPONSIBLE_ID" />
+                                <MapRule output="COLL_PERS_DATA_DEU" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_NATIONALITY_GER" />
+                                    <MapRule  input="'insert'"  output="COLL_NATIONALITY_GER@action" />
+                                    <MapRule  input="'1'"  output="COLL_NATIONALITY_GER@row" />
+                                    <MapRule  input="'11/11/1992'"  output="KEYPROP_NATIONALITY_DT" />
+                                    <MapRule  input=""  output="KEYPROP_NATION_CD" />
+                                <MapRule output="COLL_NATIONALITY_GER" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_ESP" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_DATA_ESP@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_DATA_ESP@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input=""  output="PROP_MILIT_SITUATN_ESP" />
+                                    <MapRule  input=""  output="PROP_SOC_SEC_AFF_DT" />
+                                <MapRule output="COLL_PERS_DATA_ESP" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERSON_FRA" />
+                                    <MapRule  input="'insert'"  output="COLL_PERSON_FRA@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERSON_FRA@row" />
+                                    <MapRule  input=""  output="PROP_WRK_EXP_FRA_CD" />
+                                <MapRule output="COLL_PERSON_FRA" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_FRA" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_DATA_FRA@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_DATA_FRA@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input=""  output="PROP_ENTRY_DT_FRA" />
+                                    <MapRule  input=""  output="PROP_MILIT_SITUATN_FRA" />
+                                    <MapRule  input=""  output="PROP_CPAMID" />
+                                <MapRule output="COLL_PERS_DATA_FRA" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_IND" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_DATA_IND@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_DATA_IND@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input=""  output="PROP_GPIN_CASTE" />
+                                <MapRule output="COLL_PERS_DATA_IND" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_ITA" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_DATA_ITA@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_DATA_ITA@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input=""  output="PROP_MILITARY_STAT_ITA" />
+                                    <MapRule  input=""  output="PROP_MILITARY_TYPE_ITA" />
+                                    <MapRule  input=""  output="PROP_MILITARY_RANK_ITA" />
+                                    <MapRule  input=""  output="PROP_MILITARY_END_ITA" />
+                                <MapRule output="COLL_PERS_DATA_ITA" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_JPN" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_DATA_JPN@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_DATA_JPN@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input=""  output="PROP_HONSEKI_JPN" />
+                                <MapRule output="COLL_PERS_DATA_JPN" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_MEX" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_DATA_MEX@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_DATA_MEX@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input=""  output="KEYPROP_AFORE_MEX" />
+                                    <MapRule  input=""  output="PROP_MED_REC_CD_MEX" />
+                                <MapRule output="COLL_PERS_DATA_MEX" input="@ENDPARENT()"/>
+                                <MapRule  input="@PARENT()"  output="COLL_PERS_DATA_USA" />
+                                    <MapRule  input="'insert'"  output="COLL_PERS_DATA_USA@action" />
+                                    <MapRule  input="'1'"  output="COLL_PERS_DATA_USA@row" />
+                                    <MapRule  input="'11/07/2011'"  output="KEYPROP_EFFDT" />
+                                    <MapRule  input="'Y'"  output="PROP_US_WORK_ELIGIBILTY" />
+                                    <MapRule  input=""  output="PROP_MILITARY_STATUS" />
+                                    <MapRule  input=""  output="PROP_CITIZEN_PROOF1" />
+                                    <MapRule  input=""  output="PROP_CITIZEN_PROOF2" />
+                                    <MapRule  input=""  output="PROP_MEDICARE_ENTLD_DT" />
+                                    <MapRule  input=""  output="PROP_PRIORVAL_MED_ENTDT" />
+                                <MapRule output="COLL_PERS_DATA_USA" input="@ENDPARENT()"/>
+                            <MapRule output="PS8" input="@ENDPARENT()"/>
+                        </Rules>
+                    </Table>
+                </MapStructure>
+            </Mapping>
+        </TransformTemplate>
+    </Template>
+    <Inputs>
+        <TransformationFile encoding="UTF-8" >employee_cleaned.xml</TransformationFile>
+        <StructureFile encoding="UTF-8"  type="xml" >employee_cleaned.xml</StructureFile>
+    </Inputs>
+    <Output>
+        <StructureFile encoding="UTF-8"  type="xml" >employee_cleaned_insert.xml</StructureFile>
+    </Output>
+</Project>

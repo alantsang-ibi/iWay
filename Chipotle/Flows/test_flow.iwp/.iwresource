@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cli:IWResource xmlns:cli="http://registry.iwaysoftware.com/xml/client"><Name>test_flow</Name><Type>process</Type><File>test_flow.iwp</File><Description/><GUID>5EC004F87DB4A9C73AEE324A6D01D2ED</GUID><targetServer>6.1.1</targetServer><EnableEtap>false</EnableEtap></cli:IWResource>

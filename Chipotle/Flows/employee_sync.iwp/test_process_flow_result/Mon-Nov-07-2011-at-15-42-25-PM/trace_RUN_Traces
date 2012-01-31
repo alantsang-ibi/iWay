@@ -1,0 +1,1007 @@
+system name is: 68B99EC02289273B3640DFBC9C5505A5
+'C:\iway611\config\config.xml' has not change since the last backup.
+Generic XPath iFL functions use iWay's abbreviated syntax
+XPath 1.0 iFL functions use iWay's full syntax implementation
+[threadPool] Starting pool threads....
+[threadPool] Started pool with '1' threads.
+Found adapter 'IWAF'
+Found adapter 'CICS'
+Found adapter 'DOTNET'
+Found adapter 'EDI'
+Found adapter 'IMS'
+Found adapter 'iWay'
+Found adapter 'Java'
+Found adapter 'JDEdwards One World'
+Found adapter 'JDEWorld'
+Found adapter 'LDAP'
+Found adapter 'LogListener'
+Found adapter 'MSMQ'
+Found adapter 'MUMPS'
+Found adapter 'Oracle'
+Found adapter 'PeopleSoft'
+Found adapter 'RDBMS'
+Found adapter 'Salesforce'
+Found adapter 'Siebel'
+Found adapter 'SWIFT'
+Debug: Try to load class:com.ibi.ldap.LdapEventAdapter
+Loaded locale:
+Processing descriptor definition :<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+  <option title="event_messageTitle">
+    <group title="event_standard">
+      <param name="factory" required="true" label="label" type="string" description="Ldap Connection Factory" default="com.sun.jndi.ldap.LdapCtxFactory"/>
+      <param name="url" required="true" label="label" type="string" description="Ldap Connection Url"/>
+      <param name="auth" required="true" label="label" type="string" description="Ldap Authentication Mechanism" default="simple"/>
+      <param name="user" required="true" label="label" type="string" description="Ldap Connection Principal"/>
+      <param name="password" required="true" label="label" type="passwd" description="Ldap Connection Credentials"/>
+      <param name="baseDN" required="true" label="label" type="string" description="Ldap Base Context"/>
+      <param name="protocol" required="true" label="label" type="enum" description="Ldap Protocol Version" enum="LDAP v2,LDAP v3" default="LDAP v3"/>
+      <param name="referral" required="true" label="label" type="enum" description="Ldap Referrals Handling" enum="ignore,follow" default="ignore"/>
+    </group>
+    <group title="event_basicconfig">
+      <param name="pollinterval" required="true" label="label" type="string" description="Polling Interval for Directory Sync (ms)" default="0"/>
+      <param name="eventstrategy" required="true" label="label" type="enum" description="Event Generation Strategy" enum="Active Directory Synchronization,Asynchronous Ldap Notification" default="Active Directory Synchronization"/>
+      <param name="eventsearchfilter" required="true" label="label" type="string" description="Search Filter" default=""/>
+    </group>
+    <group title="event_typeconfig">
+      <param name="add_event" required="true" label="label" type="boolean" description="Monitor Add Event" default="true"/>
+      <param name="update_event" required="true" label="label" type="boolean" description="Monitor Update Event" default="true"/>
+      <param name="delete_event" required="true" label="label" type="boolean" description="Monitor Delete Event" default="true"/>
+      <param name="rename_event" required="true" label="label" type="boolean" description="Monitor Rename Event" default="true"/>
+      <param name="eventfilterargs" required="false" label="label" type="string" description="List of Attributes to be monitored" default=""/>
+    </group>
+  </option>
+</descriptor>
+
+
+Descriptor definition is missing the template attribute. Fine if not a shim
+Debug: Try to load class:com.ibi.iwloglistener.LogListenerInboundAdapter
+LogListenerAdapter.init() com.ibi.iwloglistener.LogListenerInboundAdapter@7d9b5ed
+Unknown configuration [location]: 68B99EC02289273B3640DFBC9C5505A5
+Exception when adding exits to the dictionary: XD[FAIL] cause: 1 subcause: 0 message: Unknown configuration [location]: 68B99EC02289273B3640DFBC9C5505A5
+Encoding from iflows context is: UTF-8
+[threadPool] Starting pool threads....
+[threadPool] Started pool with '1' threads.
+Found adapter 'IWAF'
+Found adapter 'CICS'
+Found adapter 'DOTNET'
+Found adapter 'EDI'
+Found adapter 'IMS'
+Found adapter 'iWay'
+Found adapter 'Java'
+Found adapter 'JDEdwards One World'
+Found adapter 'JDEWorld'
+Found adapter 'LDAP'
+Found adapter 'LogListener'
+Found adapter 'MSMQ'
+Found adapter 'MUMPS'
+Found adapter 'Oracle'
+Found adapter 'PeopleSoft'
+Found adapter 'RDBMS'
+Found adapter 'Salesforce'
+Found adapter 'Siebel'
+Found adapter 'SWIFT'
+Debug: Try to load class:com.ibi.ldap.LdapEventAdapter
+Loaded locale:
+Processing descriptor definition :<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+  <option title="event_messageTitle">
+    <group title="event_standard">
+      <param name="factory" required="true" label="label" type="string" description="Ldap Connection Factory" default="com.sun.jndi.ldap.LdapCtxFactory"/>
+      <param name="url" required="true" label="label" type="string" description="Ldap Connection Url"/>
+      <param name="auth" required="true" label="label" type="string" description="Ldap Authentication Mechanism" default="simple"/>
+      <param name="user" required="true" label="label" type="string" description="Ldap Connection Principal"/>
+      <param name="password" required="true" label="label" type="passwd" description="Ldap Connection Credentials"/>
+      <param name="baseDN" required="true" label="label" type="string" description="Ldap Base Context"/>
+      <param name="protocol" required="true" label="label" type="enum" description="Ldap Protocol Version" enum="LDAP v2,LDAP v3" default="LDAP v3"/>
+      <param name="referral" required="true" label="label" type="enum" description="Ldap Referrals Handling" enum="ignore,follow" default="ignore"/>
+    </group>
+    <group title="event_basicconfig">
+      <param name="pollinterval" required="true" label="label" type="string" description="Polling Interval for Directory Sync (ms)" default="0"/>
+      <param name="eventstrategy" required="true" label="label" type="enum" description="Event Generation Strategy" enum="Active Directory Synchronization,Asynchronous Ldap Notification" default="Active Directory Synchronization"/>
+      <param name="eventsearchfilter" required="true" label="label" type="string" description="Search Filter" default=""/>
+    </group>
+    <group title="event_typeconfig">
+      <param name="add_event" required="true" label="label" type="boolean" description="Monitor Add Event" default="true"/>
+      <param name="update_event" required="true" label="label" type="boolean" description="Monitor Update Event" default="true"/>
+      <param name="delete_event" required="true" label="label" type="boolean" description="Monitor Delete Event" default="true"/>
+      <param name="rename_event" required="true" label="label" type="boolean" description="Monitor Rename Event" default="true"/>
+      <param name="eventfilterargs" required="false" label="label" type="string" description="List of Attributes to be monitored" default=""/>
+    </group>
+  </option>
+</descriptor>
+
+
+Descriptor definition is missing the template attribute. Fine if not a shim
+Debug: Try to load class:com.ibi.iwloglistener.LogListenerInboundAdapter
+LogListenerAdapter.init() com.ibi.iwloglistener.LogListenerInboundAdapter@68268298
+Encoding from ExecProcess context is: UTF-8
+[threadPool] Starting pool threads....
+[threadPool] Started pool with '1' threads.
+Found adapter 'IWAF'
+Found adapter 'CICS'
+Found adapter 'DOTNET'
+Found adapter 'EDI'
+Found adapter 'IMS'
+Found adapter 'iWay'
+Found adapter 'Java'
+Found adapter 'JDEdwards One World'
+Found adapter 'JDEWorld'
+Found adapter 'LDAP'
+Found adapter 'LogListener'
+Found adapter 'MSMQ'
+Found adapter 'MUMPS'
+Found adapter 'Oracle'
+Found adapter 'PeopleSoft'
+Found adapter 'RDBMS'
+Found adapter 'Salesforce'
+Found adapter 'Siebel'
+Found adapter 'SWIFT'
+Debug: Try to load class:com.ibi.ldap.LdapEventAdapter
+Loaded locale:
+Processing descriptor definition :<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+  <option title="event_messageTitle">
+    <group title="event_standard">
+      <param name="factory" required="true" label="label" type="string" description="Ldap Connection Factory" default="com.sun.jndi.ldap.LdapCtxFactory"/>
+      <param name="url" required="true" label="label" type="string" description="Ldap Connection Url"/>
+      <param name="auth" required="true" label="label" type="string" description="Ldap Authentication Mechanism" default="simple"/>
+      <param name="user" required="true" label="label" type="string" description="Ldap Connection Principal"/>
+      <param name="password" required="true" label="label" type="passwd" description="Ldap Connection Credentials"/>
+      <param name="baseDN" required="true" label="label" type="string" description="Ldap Base Context"/>
+      <param name="protocol" required="true" label="label" type="enum" description="Ldap Protocol Version" enum="LDAP v2,LDAP v3" default="LDAP v3"/>
+      <param name="referral" required="true" label="label" type="enum" description="Ldap Referrals Handling" enum="ignore,follow" default="ignore"/>
+    </group>
+    <group title="event_basicconfig">
+      <param name="pollinterval" required="true" label="label" type="string" description="Polling Interval for Directory Sync (ms)" default="0"/>
+      <param name="eventstrategy" required="true" label="label" type="enum" description="Event Generation Strategy" enum="Active Directory Synchronization,Asynchronous Ldap Notification" default="Active Directory Synchronization"/>
+      <param name="eventsearchfilter" required="true" label="label" type="string" description="Search Filter" default=""/>
+    </group>
+    <group title="event_typeconfig">
+      <param name="add_event" required="true" label="label" type="boolean" description="Monitor Add Event" default="true"/>
+      <param name="update_event" required="true" label="label" type="boolean" description="Monitor Update Event" default="true"/>
+      <param name="delete_event" required="true" label="label" type="boolean" description="Monitor Delete Event" default="true"/>
+      <param name="rename_event" required="true" label="label" type="boolean" description="Monitor Rename Event" default="true"/>
+      <param name="eventfilterargs" required="false" label="label" type="string" description="List of Attributes to be monitored" default=""/>
+    </group>
+  </option>
+</descriptor>
+
+
+Descriptor definition is missing the template attribute. Fine if not a shim
+Debug: Try to load class:com.ibi.iwloglistener.LogListenerInboundAdapter
+LogListenerAdapter.init() com.ibi.iwloglistener.LogListenerInboundAdapter@7e9a81c2
+start recognized at 1
+end recognized at 2
+There are 2 relations
+building fresh agents
+Found adapter 'IWAF'
+Found adapter 'CICS'
+Found adapter 'DOTNET'
+Found adapter 'EDI'
+Found adapter 'IMS'
+Found adapter 'iWay'
+Found adapter 'Java'
+Found adapter 'JDEdwards One World'
+Found adapter 'JDEWorld'
+Found adapter 'LDAP'
+Found adapter 'LogListener'
+Found adapter 'MSMQ'
+Found adapter 'MUMPS'
+Found adapter 'Oracle'
+Found adapter 'PeopleSoft'
+Found adapter 'RDBMS'
+Found adapter 'Salesforce'
+Found adapter 'Siebel'
+Found adapter 'SWIFT'
+Starting pool threads....
+Started pool with '10' threads.
+AdapterAgent: return status is true, useFailEdge isfalse
+No flow timeout specified, so default of 10 seconds has been set for this test. To change, set a specific flow timeout property.
+setting flow variable xtrack=full
+setting flow variable Debug=true
+setting flow variable timeout=0
+setting flow variable debug=null
+node Start returned edges: success
+Activating adapter
+activate()
+Transaction not supported by com.ibi.adapter.psoft.PeopleSoftAdapter
+Executing adapter
+process()
+<?xml version="1.0" encoding="UTF-8" ?><!--
+		Sample XML file generated by XML Spy v4.4 U (http://www.xmlspy.com)
+	--><PS8><component perform="insert">CI_PERSONAL_DATA</component><key name="KEYPROP_EMPLID">IW_AT_7</key><key name="KEYPROP_EMPL_RCD">0</key><PROP_EMPLID>IW_AT_7</PROP_EMPLID><PROP_BIRTHDATE>11/11/1992</PROP_BIRTHDATE><PROP_BIRTHPLACE>USA</PROP_BIRTHPLACE><PROP_BIRTHCOUNTRY>USA</PROP_BIRTHCOUNTRY><PROP_BIRTHSTATE>CA</PROP_BIRTHSTATE><PROP_DT_OF_DEATH/><PROP_DERIVED_EMP>N</PROP_DERIVED_EMP><PROP_DERIVED_CWR>Y</PROP_DERIVED_CWR><PROP_DERIVED_POI>N</PROP_DERIVED_POI><PROP_POI_TYPE/><PROP_WAIVE_DATA_PROTECT>N</PROP_WAIVE_DATA_PROTECT><PROP_CAN_ABORIGINAL>N</PROP_CAN_ABORIGINAL><PROP_CAN_VISBL_MINORITY>N</PROP_CAN_VISBL_MINORITY><PROP_ETHNIC_GRP_CD_UK/><PROP_NI_COMMUNITY_BG/><PROP_NI_CB_DET_METHOD/><PROP_NI_CB_DET_DATE/><EXP_RETIRE_DT/><COLL_NAME_TYPE_VW action="insert" row="1"><KEYPROP_NAME_TYPE>PRI</KEYPROP_NAME_TYPE><COLL_NAMES action="insert" row="1"><KEYPROP_NAME_TYPE>PRI</KEYPROP_NAME_TYPE><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_COUNTRY_NM_FORMAT>001</PROP_COUNTRY_NM_FORMAT><PROP_NAME_INITIALS/><PROP_NAME_PREFIX/><PROP_NAME_SUFFIX/><PROP_NAME_ROYAL_PREFIX/><PROP_NAME_ROYAL_SUFFIX/><PROP_NAME_TITLE/><PROP_LAST_NAME>Tsang</PROP_LAST_NAME><PROP_FIRST_NAME>Ethan</PROP_FIRST_NAME><PROP_MIDDLE_NAME/><PROP_SECOND_LAST_NAME/><PROP_NAME_AC/><PROP_PREF_FIRST_NAME/><PROP_PARTNER_LAST_NAME/><PROP_PARTNER_ROY_PREFIX/><PROP_LAST_NAME_PREF_NLD>1</PROP_LAST_NAME_PREF_NLD></COLL_NAMES></COLL_NAME_TYPE_VW><COLL_PERS_DATA_EFFDT action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_MAR_STATUS>M</PROP_MAR_STATUS><PROP_MAR_STATUS_DT>11/07/2011</PROP_MAR_STATUS_DT><PROP_SEX>M</PROP_SEX><PROP_HIGHEST_EDUC_LVL>G</PROP_HIGHEST_EDUC_LVL><PROP_FT_STUDENT>N</PROP_FT_STUDENT><PROP_LANG_CD/><PROP_ALTER_EMPLID/><COLL_PERS_DATA_USF action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_GVT_CRED_MIL_SVCE/><PROP_GVT_MILITARY_COMP/><PROP_GVT_MIL_GRADE/><PROP_GVT_MIL_RESRVE_CAT/><PROP_GVT_MIL_SEP_RET/><PROP_GVT_MIL_SVCE_END/><PROP_GVT_MIL_SVCE_START/><PROP_GVT_MIL_VERIFY/><PROP_GVT_PAR_NBR_LAST>0</PROP_GVT_PAR_NBR_LAST><PROP_GVT_UNIF_SVC_CTR/><PROP_GVT_VET_PREF_APPT/><PROP_GVT_VET_PREF_RIF>N</PROP_GVT_VET_PREF_RIF><PROP_GVT_CHANGE_FLAG/><PROP_GVT_DRAFT_STATUS/><PROP_GVT_YR_ATTAINED/><PROP_DISABLED_VET/><PROP_DISABLED>N</PROP_DISABLED><PROP_GVT_DISABILITY_CD>05</PROP_GVT_DISABILITY_CD><PROP_GRADE/><PROP_SAL_ADMIN_PLAN>0000</PROP_SAL_ADMIN_PLAN><PROP_GVT_CURR_AGCY_EMPL>N</PROP_GVT_CURR_AGCY_EMPL><PROP_GVT_CURR_FED_EMPL>N</PROP_GVT_CURR_FED_EMPL><PROP_GVT_HIGH_PAY_PLAN/><PROP_GVT_HIGH_GRADE/><PROP_GVT_PREV_AGCY_EMPL>N</PROP_GVT_PREV_AGCY_EMPL><PROP_GVT_PREV_FED_EMPL>N</PROP_GVT_PREV_FED_EMPL><PROP_GVT_SEP_INCENTIVE/><PROP_GVT_SEP_INCENT_DT/><PROP_GVT_TENURE/><PROP_GVT_PAY_PLAN/><PROP_BARG_UNIT/></COLL_PERS_DATA_USF></COLL_PERS_DATA_EFFDT><COLL_PERS_NID action="insert" row="1"><KEYPROP_COUNTRY>USA</KEYPROP_COUNTRY><KEYPROP_NATIONAL_ID_TYPE>PR</KEYPROP_NATIONAL_ID_TYPE><PROP_SSN_KEY_FRA/><PROP_PRIMARY_NID>Y</PROP_PRIMARY_NID><PROP_TAX_REF_ID_SGP>N</PROP_TAX_REF_ID_SGP><PROP_NATIONAL_ID>888-88-8887</PROP_NATIONAL_ID><PROP_EXPIRY_DATE/></COLL_PERS_NID><COLL_ADDRESS_TYPE_VW action="insert" row="1"><KEYPROP_ADDRESS_TYPE>HOME</KEYPROP_ADDRESS_TYPE><COLL_ADDRESSES action="insert" row="1"><KEYPROP_ADDRESS_TYPE>HOME</KEYPROP_ADDRESS_TYPE><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_EFF_STATUS>A</PROP_EFF_STATUS><PROP_COUNTRY>USA</PROP_COUNTRY><PROP_ADDRESS1>608 Sefton Ave</PROP_ADDRESS1><PROP_ADDRESS2/><PROP_ADDRESS3/><PROP_ADDRESS4/><PROP_CITY>Monterery Park</PROP_CITY><PROP_NUM1/><PROP_NUM2/><PROP_HOUSE_TYPE/><PROP_ADDR_FIELD1/><PROP_ADDR_FIELD2/><PROP_ADDR_FIELD3/><PROP_COUNTY>usa</PROP_COUNTY><PROP_STATE>CA</PROP_STATE><PROP_POSTAL>91755</PROP_POSTAL><PROP_GEO_CODE/><PROP_IN_CITY_LIMIT/><PROP_ADDRESS1_AC/><PROP_ADDRESS2_AC/><PROP_ADDRESS3_AC/><PROP_CITY_AC/><PROP_REG_REGION/></COLL_ADDRESSES></COLL_ADDRESS_TYPE_VW><COLL_PERSONAL_PHONE action="insert" row="1"><KEYPROP_PHONE_TYPE>CELL</KEYPROP_PHONE_TYPE><PROP_COUNTRY_CODE/><PROP_PHONE>909/801-2222</PROP_PHONE><PROP_EXTENSION/><PROP_PREF_PHONE_FLAG>Y</PROP_PREF_PHONE_FLAG></COLL_PERSONAL_PHONE><COLL_EMAIL_ADDRESSES action="insert" row="1"><KEYPROP_E_ADDR_TYPE>BUSN</KEYPROP_E_ADDR_TYPE><PROP_EMAIL_ADDR>alan_tsang@ibi.com</PROP_EMAIL_ADDR><PROP_PREF_EMAIL_FLAG>Y</PROP_PREF_EMAIL_FLAG></COLL_EMAIL_ADDRESSES><COLL_DIVERS_ETHNIC action="insert" row="1"><KEYPROP_REG_REGION>USA</KEYPROP_REG_REGION><KEYPROP_ETHNIC_GRP_CD/><PROP_PRIMARY_INDICATOR>N</PROP_PRIMARY_INDICATOR></COLL_DIVERS_ETHNIC><COLL_DIVERS_RELIGION action="insert" row="1"><KEYPROP_REG_REGION>USA</KEYPROP_REG_REGION><PROP_RELIGION_CD/><PROP_BLOOD_TYPE/></COLL_DIVERS_RELIGION><COLL_PERSON_BRA action="insert" row="1"><PROP_RG_ISSUEDBY_BRA/><PROP_RG_ISSUED_DT_BRA/><PROP_RG_STATE_BRA/><PROP_CTPS_SERIES_BRA/><PROP_CTPS_EXP_DT_BRA/><PROP_CTPS_STATE_BRA/><PROP_VOTER_ZONE_BRA/><PROP_VOTER_SECTION_BRA/><PROP_VOTER_CITY_BRA/><PROP_VOTER_STATE_BRA/><PROP_MILITAR_SERIES_BRA/><PROP_MILITAR_REGION_BRA/><PROP_MILITAR_STATE_BRA/><PROP_MIL_CERT_TYPE_BRA/><PROP_MILITAR_CAT_BRA/><PROP_PIS_PASEP_DT_BRA/></COLL_PERSON_BRA><COLL_PERS_DATA_BRA action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_REG_REGION/><PROP_ETHNIC_GRP_CD/><PROP_NATIONALITY_CD_BRA/><PROP_EDUCATION_LVL_BRA/><PROP_SETID/><PROP_BLOOD_TYPE>U</PROP_BLOOD_TYPE></COLL_PERS_DATA_BRA><COLL_PERS_DATA_CAN action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_BILINGUALISM_CODE/><PROP_HEALTH_CARE_NBR/><PROP_HEALTH_CARE_STATE/></COLL_PERS_DATA_CAN><COLL_PERS_SMOKER action="insert" row="1"><KEYPROP_SMOKER_DT/><PROP_SMOKER/></COLL_PERS_SMOKER><COLL_PERS_DATA_CHE action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_GUARDIAN_CHE/></COLL_PERS_DATA_CHE><COLL_PLACE_ORIG_CHE action="insert" row="1"><PROP_ORIGIN_CHE/><PROP_MAIN_ORIG_CHE>N</PROP_MAIN_ORIG_CHE></COLL_PLACE_ORIG_CHE><COLL_PERS_HUKOU_CHN action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><KEYPROP_HUKOU_TYPE_CHN/><KEYPROP_CONTRIB_AREA_CHN/></COLL_PERS_HUKOU_CHN><COLL_PERS_WRKLIF_CHN action="insert" row="1"><KEYPROP_START_DT_CHN/></COLL_PERS_WRKLIF_CHN><COLL_PERS_WRKLV_CHN action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_WRKLV_STATUS_CHN/><PROP_DT_ISSUED/><PROP_WRKLV_RENEW_DT_CHN/><PROP_EXPIRATN_DT/></COLL_PERS_WRKLV_CHN><COLL_PERS_DATA_DEU action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_MILITARY_STAT_GER/><PROP_EXPCTD_MILITARY_DT/><PROP_HR_RESPONSIBLE_ID/></COLL_PERS_DATA_DEU><COLL_NATIONALITY_GER action="insert" row="1"><KEYPROP_NATIONALITY_DT>11/11/1992</KEYPROP_NATIONALITY_DT><KEYPROP_NATION_CD/></COLL_NATIONALITY_GER><COLL_PERS_DATA_ESP action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_MILIT_SITUATN_ESP/><PROP_SOC_SEC_AFF_DT/></COLL_PERS_DATA_ESP><COLL_PERSON_FRA action="insert" row="1"><PROP_WRK_EXP_FRA_CD/></COLL_PERSON_FRA><COLL_PERS_DATA_FRA action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_ENTRY_DT_FRA/><PROP_MILIT_SITUATN_FRA/><PROP_CPAMID/></COLL_PERS_DATA_FRA><COLL_PERS_DATA_IND action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_GPIN_CASTE/></COLL_PERS_DATA_IND><COLL_PERS_DATA_ITA action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_MILITARY_STAT_ITA/><PROP_MILITARY_TYPE_ITA/><PROP_MILITARY_RANK_ITA/><PROP_MILITARY_END_ITA/></COLL_PERS_DATA_ITA><COLL_PERS_DATA_JPN action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_HONSEKI_JPN/></COLL_PERS_DATA_JPN><COLL_PERS_DATA_MEX action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><KEYPROP_AFORE_MEX/><PROP_MED_REC_CD_MEX/></COLL_PERS_DATA_MEX><COLL_PERS_DATA_USA action="insert" row="1"><KEYPROP_EFFDT>11/07/2011</KEYPROP_EFFDT><PROP_US_WORK_ELIGIBILTY>Y</PROP_US_WORK_ELIGIBILTY><PROP_MILITARY_STATUS/><PROP_CITIZEN_PROOF1/><PROP_CITIZEN_PROOF2/><PROP_MEDICARE_ENTLD_DT/><PROP_PRIORVAL_MED_ENTDT/></COLL_PERS_DATA_USA></PS8>
+namespace prefix: null namespace uri: null
+Got getComponent CI_PERSONAL_DATA
+after action 
+type 0
+calling setKeypropEmplid
+after setKeypropEmplid
+
+colname is [PropEmplid]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+   PropEmplid:    IW_AT_7
+
+colname is [PropBirthdate]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+   PropBirthdate:    11/11/1992
+
+colname is [PropBirthplace]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+   PropBirthplace:    USA
+
+colname is [PropBirthcountry]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+   PropBirthcountry:    USA
+
+colname is [PropBirthstate]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+   PropBirthstate:    CA
+
+colname is [PropDtOfDeath]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [PropDerivedEmp]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+   PropDerivedEmp:    N
+
+colname is [PropDerivedCwr]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+   PropDerivedCwr:    Y
+
+colname is [PropDerivedPoi]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+   PropDerivedPoi:    N
+
+colname is [PropPoiType]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [PropWaiveDataProtect]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+   PropWaiveDataProtect:    N
+
+colname is [PropCanAboriginal]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+   PropCanAboriginal:    N
+
+colname is [PropCanVisblMinority]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+   PropCanVisblMinority:    N
+
+colname is [PropEthnicGrpCdUk]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [PropNiCommunityBg]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [PropNiCbDetMethod]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [PropNiCbDetDate]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [ExpRetireDt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [CollNameTypeVw]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropNameType]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVw]
+   KeypropNameType:    PRI
+
+colname is [CollNames]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVw]
+
+colname is [KeypropNameType]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+   KeypropNameType:    PRI
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropCountryNmFormat]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+   PropCountryNmFormat:    001
+
+colname is [PropNameInitials]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+
+colname is [PropNamePrefix]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+
+colname is [PropNameSuffix]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+
+colname is [PropNameRoyalPrefix]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+
+colname is [PropNameRoyalSuffix]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+
+colname is [PropNameTitle]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+
+colname is [PropLastName]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+   PropLastName:    Tsang
+
+colname is [PropFirstName]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+   PropFirstName:    Ethan
+
+colname is [PropMiddleName]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+
+colname is [PropSecondLastName]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+
+colname is [PropNameAc]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+
+colname is [PropPrefFirstName]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+
+colname is [PropPartnerLastName]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+
+colname is [PropPartnerRoyPrefix]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+
+colname is [PropLastNamePrefNld]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNameTypeVwCollNames]
+   PropLastNamePrefNld:    1
+
+colname is [CollPersDataEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdt]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropMarStatus]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdt]
+   PropMarStatus:    M
+
+colname is [PropMarStatusDt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdt]
+   PropMarStatusDt:    11/07/2011
+
+colname is [PropSex]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdt]
+   PropSex:    M
+
+colname is [PropHighestEducLvl]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdt]
+   PropHighestEducLvl:    G
+
+colname is [PropFtStudent]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdt]
+   PropFtStudent:    N
+
+colname is [PropLangCd]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdt]
+
+colname is [PropAlterEmplid]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdt]
+
+colname is [CollPersDataUsf]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdt]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropGvtCredMilSvce]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtMilitaryComp]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtMilGrade]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtMilResrveCat]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtMilSepRet]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtMilSvceEnd]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtMilSvceStart]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtMilVerify]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtParNbrLast]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+   PropGvtParNbrLast:    0
+
+colname is [PropGvtUnifSvcCtr]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtVetPrefAppt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtVetPrefRif]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+   PropGvtVetPrefRif:    N
+
+colname is [PropGvtChangeFlag]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtDraftStatus]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtYrAttained]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropDisabledVet]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropDisabled]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+   PropDisabled:    N
+
+colname is [PropGvtDisabilityCd]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+   PropGvtDisabilityCd:    05
+
+colname is [PropGrade]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropSalAdminPlan]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+   PropSalAdminPlan:    0000
+
+colname is [PropGvtCurrAgcyEmpl]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+   PropGvtCurrAgcyEmpl:    N
+
+colname is [PropGvtCurrFedEmpl]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+   PropGvtCurrFedEmpl:    N
+
+colname is [PropGvtHighPayPlan]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtHighGrade]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtPrevAgcyEmpl]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+   PropGvtPrevAgcyEmpl:    N
+
+colname is [PropGvtPrevFedEmpl]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+   PropGvtPrevFedEmpl:    N
+
+colname is [PropGvtSepIncentive]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtSepIncentDt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtTenure]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropGvtPayPlan]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [PropBargUnit]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEffdtCollPersDataUsf]
+
+colname is [CollPersNid]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropCountry]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersNid]
+   KeypropCountry:    USA
+
+colname is [KeypropNationalIdType]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersNid]
+   KeypropNationalIdType:    PR
+
+colname is [PropSsnKeyFra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersNid]
+
+colname is [PropPrimaryNid]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersNid]
+   PropPrimaryNid:    Y
+
+colname is [PropTaxRefIdSgp]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersNid]
+   PropTaxRefIdSgp:    N
+
+colname is [PropNationalId]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersNid]
+   PropNationalId:    888-88-8887
+
+colname is [PropExpiryDate]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersNid]
+
+colname is [CollAddressTypeVw]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropAddressType]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVw]
+   KeypropAddressType:    HOME
+
+colname is [CollAddresses]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVw]
+
+colname is [KeypropAddressType]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+   KeypropAddressType:    HOME
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropEffStatus]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+   PropEffStatus:    A
+
+colname is [PropCountry]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+   PropCountry:    USA
+
+colname is [PropAddress1]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+   PropAddress1:    608 Sefton Ave
+
+colname is [PropAddress2]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropAddress3]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropAddress4]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropCity]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+   PropCity:    Monterery Park
+
+colname is [PropNum1]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropNum2]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropHouseType]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropAddrField1]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropAddrField2]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropAddrField3]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropCounty]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+   PropCounty:    usa
+
+colname is [PropState]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+   PropState:    CA
+
+colname is [PropPostal]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+   PropPostal:    91755
+
+colname is [PropGeoCode]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropInCityLimit]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropAddress1Ac]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropAddress2Ac]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropAddress3Ac]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropCityAc]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [PropRegRegion]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollAddressTypeVwCollAddresses]
+
+colname is [CollPersonalPhone]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropPhoneType]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonalPhone]
+   KeypropPhoneType:    CELL
+
+colname is [PropCountryCode]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonalPhone]
+
+colname is [PropPhone]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonalPhone]
+   PropPhone:    909/801-2222
+
+colname is [PropExtension]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonalPhone]
+
+colname is [PropPrefPhoneFlag]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonalPhone]
+   PropPrefPhoneFlag:    Y
+
+colname is [CollEmailAddresses]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEAddrType]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollEmailAddresses]
+   KeypropEAddrType:    BUSN
+
+colname is [PropEmailAddr]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollEmailAddresses]
+   PropEmailAddr:    alan_tsang@ibi.com
+
+colname is [PropPrefEmailFlag]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollEmailAddresses]
+   PropPrefEmailFlag:    Y
+
+colname is [CollDiversEthnic]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropRegRegion]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollDiversEthnic]
+   KeypropRegRegion:    USA
+
+colname is [KeypropEthnicGrpCd]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollDiversEthnic]
+
+colname is [PropPrimaryIndicator]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollDiversEthnic]
+   PropPrimaryIndicator:    N
+
+colname is [CollDiversReligion]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropRegRegion]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollDiversReligion]
+   KeypropRegRegion:    USA
+
+colname is [PropReligionCd]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollDiversReligion]
+
+colname is [PropBloodType]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollDiversReligion]
+
+colname is [CollPersonBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [PropRgIssuedbyBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropRgIssuedDtBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropRgStateBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropCtpsSeriesBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropCtpsExpDtBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropCtpsStateBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropVoterZoneBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropVoterSectionBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropVoterCityBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropVoterStateBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropMilitarSeriesBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropMilitarRegionBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropMilitarStateBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropMilCertTypeBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropMilitarCatBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [PropPisPasepDtBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonBra]
+
+colname is [CollPersDataBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataBra]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropRegRegion]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataBra]
+
+colname is [PropEthnicGrpCd]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataBra]
+
+colname is [PropNationalityCdBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataBra]
+
+colname is [PropEducationLvlBra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataBra]
+
+colname is [PropSetid]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataBra]
+
+colname is [PropBloodType]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataBra]
+   PropBloodType:    U
+
+colname is [CollPersDataCan]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataCan]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropBilingualismCode]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataCan]
+
+colname is [PropHealthCareNbr]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataCan]
+
+colname is [PropHealthCareState]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataCan]
+
+colname is [CollPersSmoker]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropSmokerDt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersSmoker]
+
+colname is [PropSmoker]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersSmoker]
+
+colname is [CollPersDataChe]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataChe]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropGuardianChe]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataChe]
+
+colname is [CollPlaceOrigChe]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [PropOriginChe]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPlaceOrigChe]
+
+colname is [PropMainOrigChe]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPlaceOrigChe]
+   PropMainOrigChe:    N
+
+colname is [CollPersHukouChn]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersHukouChn]
+   KeypropEffdt:    11/07/2011
+
+colname is [KeypropHukouTypeChn]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersHukouChn]
+
+colname is [KeypropContribAreaChn]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersHukouChn]
+
+colname is [CollPersWrklifChn]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropStartDtChn]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersWrklifChn]
+
+colname is [CollPersWrklvChn]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersWrklvChn]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropWrklvStatusChn]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersWrklvChn]
+
+colname is [PropDtIssued]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersWrklvChn]
+
+colname is [PropWrklvRenewDtChn]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersWrklvChn]
+
+colname is [PropExpiratnDt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersWrklvChn]
+
+colname is [CollPersDataDeu]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataDeu]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropMilitaryStatGer]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataDeu]
+
+colname is [PropExpctdMilitaryDt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataDeu]
+
+colname is [PropHrResponsibleId]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataDeu]
+
+colname is [CollNationalityGer]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropNationalityDt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNationalityGer]
+   KeypropNationalityDt:    11/11/1992
+
+colname is [KeypropNationCd]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollNationalityGer]
+
+colname is [CollPersDataEsp]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEsp]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropMilitSituatnEsp]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEsp]
+
+colname is [PropSocSecAffDt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataEsp]
+
+colname is [CollPersonFra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [PropWrkExpFraCd]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersonFra]
+
+colname is [CollPersDataFra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataFra]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropEntryDtFra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataFra]
+
+colname is [PropMilitSituatnFra]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataFra]
+
+colname is [PropCpamid]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataFra]
+
+colname is [CollPersDataInd]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataInd]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropGpinCaste]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataInd]
+
+colname is [CollPersDataIta]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataIta]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropMilitaryStatIta]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataIta]
+
+colname is [PropMilitaryTypeIta]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataIta]
+
+colname is [PropMilitaryRankIta]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataIta]
+
+colname is [PropMilitaryEndIta]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataIta]
+
+colname is [CollPersDataJpn]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataJpn]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropHonsekiJpn]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataJpn]
+
+colname is [CollPersDataMex]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataMex]
+   KeypropEffdt:    11/07/2011
+
+colname is [KeypropAforeMex]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataMex]
+
+colname is [PropMedRecCdMex]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataMex]
+
+colname is [CollPersDataUsa]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalData]
+
+colname is [KeypropEffdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataUsa]
+   KeypropEffdt:    11/07/2011
+
+colname is [PropUsWorkEligibilty]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataUsa]
+   PropUsWorkEligibilty:    Y
+
+colname is [PropMilitaryStatus]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataUsa]
+
+colname is [PropCitizenProof1]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataUsa]
+
+colname is [PropCitizenProof2]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataUsa]
+
+colname is [PropMedicareEntldDt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataUsa]
+
+colname is [PropPriorvalMedEntdt]
+Class1 name is [PeopleSoft.Generated.CompIntfc.CiPersonalDataCollPersDataUsa]
+update saved
+PeopleSoftAdapter response.urn property = null
+end process()
+node isdsrv12 returned edges: success
+Pflow thread stopping at End
+Ending pflow, number of subthreads still running=0
+back from pflow, doc count=4
+commit is set to TRUE; pflow will be COMMITTED
+Issuing local transaction commit
+passivate()
+shutting down system scheduler
+system scheduler stopped
+terminating pools
+Stopping the application manager
+Destroying pool...
+Releasing work threads...
+Waiting work threads to end....
+Ending pool threads...
+Pool destruction completed.
+Tearing down XDManager
+shutting down system scheduler
+system scheduler stopped
+enter stopall fromChild=false state=inactive
+already stopped[2]...; state=inactive
+console master stopped
+providers terminated

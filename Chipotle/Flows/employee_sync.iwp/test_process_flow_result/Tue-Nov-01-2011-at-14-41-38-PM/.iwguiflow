@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IWAY xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.iwaysoftware.com/designer/model">
+  <SERVER NAME="iWay Registry">
+    <PROCESSFLOW DESCRIPTION="" IWAYVERSION="6.1.1" NAME="test_flow" TIMEOUT="0">
+      <OBJECTS>
+        <OBJECT CLASS="start" DESCRIPTION="Start Object" ETAP="false" ID="start" KEY="1" NAME="Start" POS_LEFT="0" POS_TOP="0" TYPE="FLOWCHART_STARTUP_START">
+          <USER>
+            <PROPERTIES>
+              <GROUP NAME="General">
+                <PROPERTYITEM DISPLAY="No" ITEMTYPE="boolean" LABEL="Debug" NAME="Debug" REQUIRED="false" VALUE="true" VALUETYPE="boolean"/>
+              </GROUP>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="end" CLASSNAME="" DEACTIVATE="false" DESCRIPTION="End Object" ETAP="false" KEY="2" NAME="End" POS_LEFT="354" POS_TOP="76" TYPE="FLOWCHART_STARTUP_END" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GUIDS/>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="agent" CLASSNAME="com.ibi.agents.XDTransformAgent" DEACTIVATE="false" ETAP="false" ID="test_transformation" KEY="3" NAME="test_transformation" POS_LEFT="182" POS_TOP="73" TYPE="FLOWCHART_TRANSFORM" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="General">
+                <PROPERTYITEM DESCRIPTION="Type of transformation" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="engine" REQUIRED="false" VALUE="iway" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="Defined transform name to execute" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="transform" REQUIRED="false" VALUE="test_transformation" VALUETYPE=""/>
+              </GROUP>
+              <GROUP NAME="User Defined"/>
+              <GUIDS>
+                <PROPERTYITEM GUID="25E16D818E55DE3CE9FD18673B90FFFA" GUIDTYPE="transform" NAME="transform"/>
+              </GUIDS>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+      </OBJECTS>
+      <RELATIONS STARTINSTANCE="1">
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="1" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="3">
+          <CUSTOMEVENTS/>
+        </RELATION>
+        <RELATION COMPLETION="OnSuccess" EVENT="" FROMINSTANCE="3" LINEDISPLAY="OnSuccess" LINEID="FLOWCHART_SUCCESS_LINE" TOINSTANCE="2">
+          <CUSTOMEVENTS/>
+        </RELATION>
+      </RELATIONS>
+      <TEXTLABELS/>
+    </PROCESSFLOW>
+  </SERVER>
+  <GLOBALVARIABLES/>
+</IWAY>

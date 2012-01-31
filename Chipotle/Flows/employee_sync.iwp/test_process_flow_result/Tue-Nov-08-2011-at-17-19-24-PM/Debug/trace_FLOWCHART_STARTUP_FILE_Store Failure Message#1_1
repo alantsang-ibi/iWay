@@ -1,0 +1,44 @@
+Name=Store Failure Message  Type=Agent  InEdge=OnError  From=PeopleSoft - isdsrv12  Not nested
+Registers
+             doclocation         [SYS]   config
+             engine              [SYS]   07B6E0D0104613FCEAB85415235D59D2
+   CHANGED > iway.lastnode       [SYS]   Store Failure Message
+             iway.pid            [SYS]   3988
+   CHANGED > iway.priornode      [SYS]   PeopleSoft - isdsrv12
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   192.168.122.1
+             iwayconfig          [SYS]   07B6E0D0104613FCEAB85415235D59D2
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/07B6E0D0104613FCEAB85...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   52f6b865-5570-48ed-a031-f4146694aabb
+     ADDED > emit.file.filename  [USR]   C:\Alan\out\create_employee_ps_2011-11-...[59]
+Content of document
+	Form=xml, state=error
+	<?xml version="1.0" encoding="UTF-8" ?>
+<emitstatus status="0">
+   <protocol>FILE</protocol>
+   <parms>
+      <parm name="append">false</parm>
+      <parm name="appendcrlf">false</parm>
+      <parm name="b64">false</parm>
+      <parm name="directory">C:\Alan\out</parm>
+      <parm name="location"/>
+      <parm name="nopreemit">true</parm>
+      <parm name="pattern">create_employee_ps_*.txt</parm>
+      <parm name="return">status</parm>
+      <parm name="trans">false</parm>
+      <parm name="wanteos">false</parm>
+   </parms>
+   <timestamp>2011-11-09T01:19:24.525Z</timestamp>
+   <status>0</status>
+   <channel>ExecProcess</channel>
+   <nodename>agent_Store Failure Message</nodename>
+   <count>1</count>
+   <name>C:\Alan\out\create_employee_ps_2011-11-09T01_19_24_497Z.txt</name>
+</emitstatus>

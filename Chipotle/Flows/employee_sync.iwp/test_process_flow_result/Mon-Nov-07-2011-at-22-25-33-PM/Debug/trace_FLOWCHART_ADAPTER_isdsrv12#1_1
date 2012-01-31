@@ -1,0 +1,26 @@
+Name=isdsrv12  Type=Agent  InEdge=OnCompletion  From=employee_dq_ps  Not nested
+Registers
+     ADDED > initparms           [CFG]   {persistconnection=false, descriptor=ad...[261]
+             doclocation         [SYS]   config
+             engine              [SYS]   8CD9BD4C8E27C574C68ECF2F2A854DCF
+   CHANGED > iway.lastnode       [SYS]   isdsrv12
+             iway.pid            [SYS]   3988
+     ADDED > iway.priornode      [SYS]   employee_dq_ps
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.115
+             iwayconfig          [SYS]   8CD9BD4C8E27C574C68ECF2F2A854DCF
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/8CD9BD4C8E27C574C68EC...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   b9ff534a-71a3-4273-827f-1affeec43c08
+Content of document
+	Form=xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+<PS8>
+   <error>Data being added conflicts with existing data. (18,2)Error saving Component Interface. {CI_PERSONAL_DATA} (91,37)Failed to execute PSBusComp request  </error>
+</PS8>

@@ -1,0 +1,21 @@
+Name=End  Type=Terminate  InEdge=success  From=PeopleSoft - isdsrv12  Not nested
+Registers
+             initparms           [CFG]   {persistconnection=false, descriptor=ad...[261]
+             doclocation         [SYS]   config
+             engine              [SYS]   B9BD1FAF77C1B6BCF24A0CC3F1E18643
+             iway.lastnode       [SYS]   PeopleSoft - isdsrv12
+             iway.pid            [SYS]   3988
+             iway.priornode      [SYS]   Transform Employee Object for PeopleSof...[50]
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.179
+             iwayconfig          [SYS]   B9BD1FAF77C1B6BCF24A0CC3F1E18643
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/B9BD1FAF77C1B6BCF24A0...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   97b0f269-ae78-44e7-b8cd-542f1e79ea65
+Object type does not support document display

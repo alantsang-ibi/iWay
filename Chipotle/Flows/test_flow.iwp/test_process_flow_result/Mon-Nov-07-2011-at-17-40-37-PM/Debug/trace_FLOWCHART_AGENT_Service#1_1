@@ -1,0 +1,31 @@
+Name=Service  Type=Agent  InEdge=OnCompletion  From=Start  Not nested
+Registers
+             doclocation         [SYS]   config
+             engine              [SYS]   8DFA479524A89BF79C97381610E06EED
+     ADDED > iway.lastnode       [SYS]   Service
+             iway.pid            [SYS]   27004
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.62
+             iwayconfig          [SYS]   8DFA479524A89BF79C97381610E06EED
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/8DFA479524A89BF79C973...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   edbb364d-948f-42f3-b7e3-b7d4b758d026
+Content of document
+	Form=xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+<clean_employee>
+   <ssn>999-99-9999</ssn>
+   <firstname>Alan</firstname>
+   <lastname>Tsang</lastname>
+   <street>608 Sefton Ave</street>
+   <city>monterey park</city>
+   <state>ca</state>
+   <zip>91755</zip>
+   <std_street/>
+</clean_employee>

@@ -1,0 +1,26 @@
+Name=PeopleSoft - isdsrv12  Type=Agent  InEdge=OnCompletion  From=Transform Employee Object for PeopleSoft Insertion  Not nested
+Registers
+     ADDED > initparms           [CFG]   {persistconnection=false, descriptor=ad...[261]
+             doclocation         [SYS]   config
+             engine              [SYS]   2C0FFD457479193E27C72775E6996FCE
+   CHANGED > iway.lastnode       [SYS]   PeopleSoft - isdsrv12
+             iway.pid            [SYS]   3988
+   CHANGED > iway.priornode      [SYS]   Transform Employee Object for PeopleSof...[50]
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.139
+             iwayconfig          [SYS]   2C0FFD457479193E27C72775E6996FCE
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/2C0FFD457479193E27C72...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   c668eded-4d3c-4cbf-b32e-71af95077b6b
+Content of document
+	Form=xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+<PS8>
+   <done/>
+</PS8>

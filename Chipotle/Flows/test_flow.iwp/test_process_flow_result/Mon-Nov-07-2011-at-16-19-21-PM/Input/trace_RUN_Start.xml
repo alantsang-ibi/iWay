@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clean_employee>
+	<ssn>999-99-9999</ssn>
+	<firstname>Alan</firstname>
+	<lastname>Tsang</lastname>
+	<street>608 Sefton Ave</street>
+	<city>monterey park</city>
+	<state>ca</state>
+	<zip>91755</zip>
+</clean_employee>

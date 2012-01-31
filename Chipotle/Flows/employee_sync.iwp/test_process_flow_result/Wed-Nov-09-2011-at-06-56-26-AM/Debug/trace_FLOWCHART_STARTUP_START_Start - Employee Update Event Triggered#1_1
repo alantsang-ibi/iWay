@@ -1,0 +1,18 @@
+Name=Start - Employee Update Event Triggered  Type=Start  InEdge=success  From=begin  Not nested
+Registers
+     ADDED > doclocation         [SYS]   config
+     ADDED > engine              [SYS]   ED7313430639933DC8EDB95C1D677357
+     ADDED > iway.pid            [SYS]   3988
+     ADDED > iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+     ADDED > iway.serverhost     [SYS]   INFORMA-F7T131V
+     ADDED > iway.serverip       [SYS]   172.30.147.139
+     ADDED > iwayconfig          [SYS]   ED7313430639933DC8EDB95C1D677357
+     ADDED > iwayhome            [SYS]   C:/iway611/
+     ADDED > iwayversion         [SYS]   6.1.1
+     ADDED > iwayworkdir         [SYS]   C:/iway611/config/ED7313430639933DC8EDB...[50]
+     ADDED > locale              [SYS]   en_us
+     ADDED > name                [SYS]   ExecProcess
+     ADDED > protocol            [SYS]   Lcl
+     ADDED > iway.flowname       [DOC]   flowTest
+     ADDED > tid                 [DOC]   52937c92-8ab0-47f2-afe9-630c3919b4a8
+Object type does not support document display

@@ -1,0 +1,39 @@
+Name=Cleanse Employee Object  Type=Agent  InEdge=OnCompletion  From=Start - Employee Update Event Triggered  Not nested
+Registers
+             doclocation         [SYS]   config
+             engine              [SYS]   79D90E32F790B85F262E312F1EB899F3
+     ADDED > iway.lastnode       [SYS]   Cleanse Employee Object
+             iway.pid            [SYS]   3988
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   192.168.122.1
+             iwayconfig          [SYS]   79D90E32F790B85F262E312F1EB899F3
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/79D90E32F790B85F262E3...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   50145201-99d6-4b1b-bd5e-ae458a69ffb8
+Content of document
+	Form=xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+<emitstatus status="1">
+   <protocol>SOAP</protocol>
+   <parms>
+      <parm name="proxy">false</parm>
+      <parm name="soapaction">clean_employee</parm>
+      <parm name="soapaddress">http://localhost:8888/clean_employee</parm>
+      <parm name="soapbodytype">&lt; Empty &gt;</parm>
+      <parm name="soapenv">false</parm>
+      <parm name="soapfaulttype">&lt; Take No Action &gt;</parm>
+      <parm name="soapheadertype">&lt; Empty &gt;</parm>
+      <parm name="soapresponsetype">&lt; Take No Action &gt;</parm>
+   </parms>
+   <timestamp>2011-11-09T00:43:27.030Z</timestamp>
+   <status>1</status>
+   <msg>unable to accept SOAP response</msg>
+   <channel>ExecProcess</channel>
+   <nodename>agent_Cleanse Employee Object</nodename>
+</emitstatus>

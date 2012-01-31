@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappingbuilder:DocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mappingbuilder="http://iwtrans.iwaysoftware.com/mappingbuilder">
+  <map>
+    <function description="Parameter list: (string).&#xA;Allows you to concatenate (join) strings." index="0" label="@CONCAT" name="CONCAT" type="2">
+      <parameter index="0" label="string"/>
+      <parameter index="1" label="string"/>
+      <functionField index="0" label="IW_AT_" name="" type="4"/>
+      <functionField description="Parameter list: (string, length).&#xA;Returns a specified number of characters from&#xA;an alpha string starting with the rightmost character (will right justify string (remove trailing blanks)) before commencing." index="1" label="@RIGHT" name="RIGHT" type="2">
+        <parameter index="0" label="string"/>
+        <parameter index="1" label="length"/>
+        <functionField index="0" label="Envelope/Body/clean_employeeResponse/ssn" name="" type="1"/>
+        <functionField index="1" label="2" name="" type="4"/>
+      </functionField>
+    </function>
+  </map>
+</mappingbuilder:DocumentRoot>

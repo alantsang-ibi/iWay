@@ -1,0 +1,371 @@
+system name is: 6B3AFB23AF98CF32D26BC3E84DE48E18
+Dictionary is <edaxml version="6.0" xmlns:eda="http://iwaysoftware.com" writeable="yes"><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>7n7JBATXEDKCvFna74C+MHpzmuI=</DigestValue></Reference></SignedInfo><SignatureValue>YZLB4m3FVEffSuz3z7enGCE3Vs24mz780uENI1zt8ELLfnzl/+QNNzU6ZZNPlhPPEXTeD/8a4Pb4
+87KNguGmpNvsoLnbHDZj1vFNbz79BN165feCfaccjVeWDOjmyh6kMX3+4fZc8NsbVRNApceFfjNp
+pw/I7gJWuHNUDAuj5Yc=</SignatureValue></Signature><system><define><agent><name value="com.ibi.agents.XDCopyAgent" comment="Returns input document to output destination">COPY</name></agent><pflows/></define><settings><backups>5</backups><datadebugsize>4</datadebugsize><logroot>log</logroot><info>true</info><error>true</error><deadletter>deadletter</deadletter><retryinterval>120</retryinterval><killinterval>60</killinterval></settings><transform><xmlg><name guid="3422D31EC6B6DDFD506D0E14239DD8B4" engine="iway" file="C:\iway611\config\6B3AFB23AF98CF32D26BC3E84DE48E18\transforms/3422D31EC6B6DDFD506D0E14239DD8B4/employee_dq_ps.gxp">employee_dq_ps</name></xmlg><xslt/></transform></system></edaxml>
+'C:\iway611\config\config.xml' has not change since the last backup.
+Generic XPath iFL functions use iWay's abbreviated syntax
+XPath 1.0 iFL functions use iWay's full syntax implementation
+[threadPool] Starting pool threads....
+[threadPool] Started pool with '1' threads.
+Found adapter 'IWAF'
+Found adapter 'CICS'
+Found adapter 'DOTNET'
+Found adapter 'EDI'
+Found adapter 'IMS'
+Found adapter 'iWay'
+Found adapter 'Java'
+Found adapter 'JDEdwards One World'
+Found adapter 'JDEWorld'
+Found adapter 'LDAP'
+Found adapter 'LogListener'
+Found adapter 'MSMQ'
+Found adapter 'MUMPS'
+Found adapter 'Oracle'
+Found adapter 'PeopleSoft'
+Found adapter 'RDBMS'
+Found adapter 'Salesforce'
+Found adapter 'Siebel'
+Found adapter 'SWIFT'
+Debug: Try to load class:com.ibi.ldap.LdapEventAdapter
+Loaded locale:
+Processing descriptor definition :<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+  <option title="event_messageTitle">
+    <group title="event_standard">
+      <param name="factory" required="true" label="label" type="string" description="Ldap Connection Factory" default="com.sun.jndi.ldap.LdapCtxFactory"/>
+      <param name="url" required="true" label="label" type="string" description="Ldap Connection Url"/>
+      <param name="auth" required="true" label="label" type="string" description="Ldap Authentication Mechanism" default="simple"/>
+      <param name="user" required="true" label="label" type="string" description="Ldap Connection Principal"/>
+      <param name="password" required="true" label="label" type="passwd" description="Ldap Connection Credentials"/>
+      <param name="baseDN" required="true" label="label" type="string" description="Ldap Base Context"/>
+      <param name="protocol" required="true" label="label" type="enum" description="Ldap Protocol Version" enum="LDAP v2,LDAP v3" default="LDAP v3"/>
+      <param name="referral" required="true" label="label" type="enum" description="Ldap Referrals Handling" enum="ignore,follow" default="ignore"/>
+    </group>
+    <group title="event_basicconfig">
+      <param name="pollinterval" required="true" label="label" type="string" description="Polling Interval for Directory Sync (ms)" default="0"/>
+      <param name="eventstrategy" required="true" label="label" type="enum" description="Event Generation Strategy" enum="Active Directory Synchronization,Asynchronous Ldap Notification" default="Active Directory Synchronization"/>
+      <param name="eventsearchfilter" required="true" label="label" type="string" description="Search Filter" default=""/>
+    </group>
+    <group title="event_typeconfig">
+      <param name="add_event" required="true" label="label" type="boolean" description="Monitor Add Event" default="true"/>
+      <param name="update_event" required="true" label="label" type="boolean" description="Monitor Update Event" default="true"/>
+      <param name="delete_event" required="true" label="label" type="boolean" description="Monitor Delete Event" default="true"/>
+      <param name="rename_event" required="true" label="label" type="boolean" description="Monitor Rename Event" default="true"/>
+      <param name="eventfilterargs" required="false" label="label" type="string" description="List of Attributes to be monitored" default=""/>
+    </group>
+  </option>
+</descriptor>
+
+
+Descriptor definition is missing the template attribute. Fine if not a shim
+Debug: Try to load class:com.ibi.iwloglistener.LogListenerInboundAdapter
+LogListenerAdapter.init() com.ibi.iwloglistener.LogListenerInboundAdapter@cfed7c
+Unknown configuration [location]: 6B3AFB23AF98CF32D26BC3E84DE48E18
+Exception when adding exits to the dictionary: XD[FAIL] cause: 1 subcause: 0 message: Unknown configuration [location]: 6B3AFB23AF98CF32D26BC3E84DE48E18
+Dictionary is <edaxml version="6.0" xmlns:eda="http://iwaysoftware.com" writeable="yes"><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>7n7JBATXEDKCvFna74C+MHpzmuI=</DigestValue></Reference></SignedInfo><SignatureValue>YZLB4m3FVEffSuz3z7enGCE3Vs24mz780uENI1zt8ELLfnzl/+QNNzU6ZZNPlhPPEXTeD/8a4Pb4
+87KNguGmpNvsoLnbHDZj1vFNbz79BN165feCfaccjVeWDOjmyh6kMX3+4fZc8NsbVRNApceFfjNp
+pw/I7gJWuHNUDAuj5Yc=</SignatureValue></Signature><system><define><agent><name value="com.ibi.agents.XDCopyAgent" comment="Returns input document to output destination">COPY</name></agent><pflows/></define><settings><backups>5</backups><datadebugsize>4</datadebugsize><logroot>log</logroot><info>true</info><error>true</error><deadletter>deadletter</deadletter><retryinterval>120</retryinterval><killinterval>60</killinterval></settings><transform><xmlg><name guid="3422D31EC6B6DDFD506D0E14239DD8B4" engine="iway" file="C:\iway611\config\6B3AFB23AF98CF32D26BC3E84DE48E18\transforms/3422D31EC6B6DDFD506D0E14239DD8B4/employee_dq_ps.gxp">employee_dq_ps</name></xmlg><xslt/></transform></system></edaxml>
+Encoding from iflows context is: UTF-8
+[threadPool] Starting pool threads....
+[threadPool] Started pool with '1' threads.
+Found adapter 'IWAF'
+Found adapter 'CICS'
+Found adapter 'DOTNET'
+Found adapter 'EDI'
+Found adapter 'IMS'
+Found adapter 'iWay'
+Found adapter 'Java'
+Found adapter 'JDEdwards One World'
+Found adapter 'JDEWorld'
+Found adapter 'LDAP'
+Found adapter 'LogListener'
+Found adapter 'MSMQ'
+Found adapter 'MUMPS'
+Found adapter 'Oracle'
+Found adapter 'PeopleSoft'
+Found adapter 'RDBMS'
+Found adapter 'Salesforce'
+Found adapter 'Siebel'
+Found adapter 'SWIFT'
+Debug: Try to load class:com.ibi.ldap.LdapEventAdapter
+Loaded locale:
+Processing descriptor definition :<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+  <option title="event_messageTitle">
+    <group title="event_standard">
+      <param name="factory" required="true" label="label" type="string" description="Ldap Connection Factory" default="com.sun.jndi.ldap.LdapCtxFactory"/>
+      <param name="url" required="true" label="label" type="string" description="Ldap Connection Url"/>
+      <param name="auth" required="true" label="label" type="string" description="Ldap Authentication Mechanism" default="simple"/>
+      <param name="user" required="true" label="label" type="string" description="Ldap Connection Principal"/>
+      <param name="password" required="true" label="label" type="passwd" description="Ldap Connection Credentials"/>
+      <param name="baseDN" required="true" label="label" type="string" description="Ldap Base Context"/>
+      <param name="protocol" required="true" label="label" type="enum" description="Ldap Protocol Version" enum="LDAP v2,LDAP v3" default="LDAP v3"/>
+      <param name="referral" required="true" label="label" type="enum" description="Ldap Referrals Handling" enum="ignore,follow" default="ignore"/>
+    </group>
+    <group title="event_basicconfig">
+      <param name="pollinterval" required="true" label="label" type="string" description="Polling Interval for Directory Sync (ms)" default="0"/>
+      <param name="eventstrategy" required="true" label="label" type="enum" description="Event Generation Strategy" enum="Active Directory Synchronization,Asynchronous Ldap Notification" default="Active Directory Synchronization"/>
+      <param name="eventsearchfilter" required="true" label="label" type="string" description="Search Filter" default=""/>
+    </group>
+    <group title="event_typeconfig">
+      <param name="add_event" required="true" label="label" type="boolean" description="Monitor Add Event" default="true"/>
+      <param name="update_event" required="true" label="label" type="boolean" description="Monitor Update Event" default="true"/>
+      <param name="delete_event" required="true" label="label" type="boolean" description="Monitor Delete Event" default="true"/>
+      <param name="rename_event" required="true" label="label" type="boolean" description="Monitor Rename Event" default="true"/>
+      <param name="eventfilterargs" required="false" label="label" type="string" description="List of Attributes to be monitored" default=""/>
+    </group>
+  </option>
+</descriptor>
+
+
+Descriptor definition is missing the template attribute. Fine if not a shim
+Debug: Try to load class:com.ibi.iwloglistener.LogListenerInboundAdapter
+LogListenerAdapter.init() com.ibi.iwloglistener.LogListenerInboundAdapter@718503e4
+starting W.iflows.1
+Dictionary is <edaxml version="6.0" xmlns:eda="http://iwaysoftware.com" writeable="yes"><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>7n7JBATXEDKCvFna74C+MHpzmuI=</DigestValue></Reference></SignedInfo><SignatureValue>YZLB4m3FVEffSuz3z7enGCE3Vs24mz780uENI1zt8ELLfnzl/+QNNzU6ZZNPlhPPEXTeD/8a4Pb4
+87KNguGmpNvsoLnbHDZj1vFNbz79BN165feCfaccjVeWDOjmyh6kMX3+4fZc8NsbVRNApceFfjNp
+pw/I7gJWuHNUDAuj5Yc=</SignatureValue></Signature><system><define><agent><name value="com.ibi.agents.XDCopyAgent" comment="Returns input document to output destination">COPY</name></agent><pflows/></define><settings><backups>5</backups><datadebugsize>4</datadebugsize><logroot>log</logroot><info>true</info><error>true</error><deadletter>deadletter</deadletter><retryinterval>120</retryinterval><killinterval>60</killinterval></settings><transform><xmlg><name guid="3422D31EC6B6DDFD506D0E14239DD8B4" engine="iway" file="C:\iway611\config\6B3AFB23AF98CF32D26BC3E84DE48E18\transforms/3422D31EC6B6DDFD506D0E14239DD8B4/employee_dq_ps.gxp">employee_dq_ps</name></xmlg><xslt/></transform></system></edaxml>
+Encoding from ExecProcess context is: UTF-8
+[threadPool] Starting pool threads....
+[threadPool] Started pool with '1' threads.
+Found adapter 'IWAF'
+Found adapter 'CICS'
+Found adapter 'DOTNET'
+Found adapter 'EDI'
+Found adapter 'IMS'
+Found adapter 'iWay'
+Found adapter 'Java'
+Found adapter 'JDEdwards One World'
+Found adapter 'JDEWorld'
+Found adapter 'LDAP'
+Found adapter 'LogListener'
+Found adapter 'MSMQ'
+Found adapter 'MUMPS'
+Found adapter 'Oracle'
+Found adapter 'PeopleSoft'
+Found adapter 'RDBMS'
+Found adapter 'Salesforce'
+Found adapter 'Siebel'
+Found adapter 'SWIFT'
+Debug: Try to load class:com.ibi.ldap.LdapEventAdapter
+Loaded locale:
+Processing descriptor definition :<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+  <option title="event_messageTitle">
+    <group title="event_standard">
+      <param name="factory" required="true" label="label" type="string" description="Ldap Connection Factory" default="com.sun.jndi.ldap.LdapCtxFactory"/>
+      <param name="url" required="true" label="label" type="string" description="Ldap Connection Url"/>
+      <param name="auth" required="true" label="label" type="string" description="Ldap Authentication Mechanism" default="simple"/>
+      <param name="user" required="true" label="label" type="string" description="Ldap Connection Principal"/>
+      <param name="password" required="true" label="label" type="passwd" description="Ldap Connection Credentials"/>
+      <param name="baseDN" required="true" label="label" type="string" description="Ldap Base Context"/>
+      <param name="protocol" required="true" label="label" type="enum" description="Ldap Protocol Version" enum="LDAP v2,LDAP v3" default="LDAP v3"/>
+      <param name="referral" required="true" label="label" type="enum" description="Ldap Referrals Handling" enum="ignore,follow" default="ignore"/>
+    </group>
+    <group title="event_basicconfig">
+      <param name="pollinterval" required="true" label="label" type="string" description="Polling Interval for Directory Sync (ms)" default="0"/>
+      <param name="eventstrategy" required="true" label="label" type="enum" description="Event Generation Strategy" enum="Active Directory Synchronization,Asynchronous Ldap Notification" default="Active Directory Synchronization"/>
+      <param name="eventsearchfilter" required="true" label="label" type="string" description="Search Filter" default=""/>
+    </group>
+    <group title="event_typeconfig">
+      <param name="add_event" required="true" label="label" type="boolean" description="Monitor Add Event" default="true"/>
+      <param name="update_event" required="true" label="label" type="boolean" description="Monitor Update Event" default="true"/>
+      <param name="delete_event" required="true" label="label" type="boolean" description="Monitor Delete Event" default="true"/>
+      <param name="rename_event" required="true" label="label" type="boolean" description="Monitor Rename Event" default="true"/>
+      <param name="eventfilterargs" required="false" label="label" type="string" description="List of Attributes to be monitored" default=""/>
+    </group>
+  </option>
+</descriptor>
+
+
+Descriptor definition is missing the template attribute. Fine if not a shim
+Debug: Try to load class:com.ibi.iwloglistener.LogListenerInboundAdapter
+LogListenerAdapter.init() com.ibi.iwloglistener.LogListenerInboundAdapter@10a0f0c9
+starting W.ExecProcess.1
+TID not found, so creating it as 57ddb322-9250-493c-b528-2fdf99080d07
+start recognized at 1
+end recognized at 2
+end recognized at 2
+There are 7 relations
+building fresh agents
+attempting to load agent: com.ibi.agents.XDWSClientAgent
+building fresh agents
+attempting to load agent: com.ibi.agents.XDTransformAgent
+building fresh agents
+attempting to load agent: com.ibi.agents.XDAdapterAgent
+Found adapter 'IWAF'
+Found adapter 'CICS'
+Found adapter 'DOTNET'
+Found adapter 'EDI'
+Found adapter 'IMS'
+Found adapter 'iWay'
+Found adapter 'Java'
+Found adapter 'JDEdwards One World'
+Found adapter 'JDEWorld'
+Found adapter 'LDAP'
+Found adapter 'LogListener'
+Found adapter 'MSMQ'
+Found adapter 'MUMPS'
+Found adapter 'Oracle'
+Found adapter 'PeopleSoft'
+Found adapter 'RDBMS'
+Found adapter 'Salesforce'
+Found adapter 'Siebel'
+Found adapter 'SWIFT'
+Starting pool threads....
+Started pool with '10' threads.
+AdapterAgent: return status is true, useFailEdge isfalse
+building fresh agents
+attempting to load agent: com.ibi.agents.XDFileEmitAgent
+building fresh agents
+attempting to load agent: com.ibi.agents.XDEmailEmitAgent
+No flow timeout specified, so default of 10 seconds has been set for this test. To change, set a specific flow timeout property.
+Before call to Start - Employee Update Event Triggered
+pflow performing Start - Employee Update Event Triggered from subflowStart on edge success, type Start
+setting flow variable xtrack=full
+setting flow variable Debug=true
+setting flow variable timeout=0
+setting flow variable debug=null
+node Start - Employee Update Event Triggered returned edges: success
+Before call to Cleanse Employee Object
+pflow performing Cleanse Employee Object from Start - Employee Update Event Triggered on edge $complete, type Agent
+WSClient Address param: http://localhost:8888/clean_employee
+WSClient Action param: clean_employee
+WSClient Header param: null
+WSClient Body param: null
+WSClient SoapStrip param: false
+WSClient Proxy param: false
+WSClient Proxy Url param: null
+WSClient Proxy User ID param: null
+WSClient Proxy Password param: null
+WSClient Post: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><SOAP-ENV:Body><ws:clean_employee xmlns:ws="http://www.example.com/ws"><ws:ssn>999-99-8888</ws:ssn><ws:firstname>Steve</ws:firstname><ws:lastname>Ells</ws:lastname><ws:street>1501 Wynkoop</ws:street><ws:city/><ws:state>co</ws:state><ws:zip>80202</ws:zip><ws:phone>(626)203-9137</ws:phone></ws:clean_employee></SOAP-ENV:Body></SOAP-ENV:Envelope>
+data length: 580
+HTTPPoster opening regular connection: {host=localhost, port=8888}
+header line: 'http/1.0 200 ok'
+native error: 200
+header line: 'connection: close'
+header line: 'pragma: no-cache'
+header line: 'cache-control: no-cache'
+header line: 'soapaction: clean_employeeresponse'
+header line: 'content-type: text/xml; charset=utf-8'
+end of headers hit
+no content length received, reading until end of stream
+HTTP response: <?xml version='1.0' encoding='UTF-8'?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://www.example.com/ws">
+  <soap:Body>
+    <ns1:clean_employeeResponse>
+      <ns1:ssn>999-99-8888</ns1:ssn>
+      <ns1:firstname>Steve</ns1:firstname>
+      <ns1:lastname>Ells</ns1:lastname>
+      <ns1:street>1501 Wynkoop</ns1:street>
+      <ns1:city xsi:nil="true"/>
+      <ns1:state>co</ns1:state>
+      <ns1:zip>80202</ns1:zip>
+      <ns1:phone>(626)203-9137</ns1:phone>
+      <ns1:std_street>1501 WYNKOOP ST</ns1:std_street>
+      <ns1:std_city>DENVER</ns1:std_city>
+      <ns1:std_state>CO</ns1:std_state>
+      <ns1:std_zip>80202</ns1:std_zip>
+      <ns1:addr_status>INVALID</ns1:addr_status>
+      <ns1:addr_validity_level>STREET</ns1:addr_validity_level>
+      <ns1:addr_score>160</ns1:addr_score>
+      <ns1:addr_cleansing_code>AMBIGUOUS_BUILDING CITY_DETERMINED CITY_MISSING SN_INVALID STREET_TYPE_MISSING</ns1:addr_cleansing_code>
+      <ns1:std_phone>626.203.9137</ns1:std_phone>
+    </ns1:clean_employeeResponse>
+  </soap:Body>
+</soap:Envelope>
+response content-type: text/xml; charset=UTF-8
+xable - after unlocked execute of Cleanse Employee Object retval=success
+node Cleanse Employee Object returned edges: success
+Before call to Transform Employee Object for PeopleSoft Insertion
+pflow performing Transform Employee Object for PeopleSoft Insertion from Cleanse Employee Object on edge $complete, type Agent
+any type requested, input is xml not error.
+Setting iWay transform template, file 'C:\iway611\config\6B3AFB23AF98CF32D26BC3E84DE48E18\transforms\3422D31EC6B6DDFD506D0E14239DD8B4\employee_dq_ps.gxp'
+Template base url is: file:/C:/iway611/config/6B3AFB23AF98CF32D26BC3E84DE48E18/transforms/3422D31EC6B6DDFD506D0E14239DD8B4/
+Template alias 'employee_dq_ps' = url(file:/C:/iway611/config/6B3AFB23AF98CF32D26BC3E84DE48E18/transforms/3422D31EC6B6DDFD506D0E14239DD8B4/) will be set into Transformer Manager.
+Applying iway transform[3] 'employee_dq_ps'
+Transform input: <?xml version="1.0" encoding="UTF-8" ?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://www.example.com/ws"><soap:Body><ns1:clean_employeeResponse><ns1:ssn>999-99-8888</ns1:ssn><ns1:firstname>Steve</ns1:firstname><ns1:lastname>Ells</ns1:lastname><ns1:street>1501 Wynkoop</ns1:street><ns1:city xsi:nil="true"/><ns1:state>co</ns1:state><ns1:zip>80202</ns1:zip><ns1:phone>(626)203-9137</ns1:phone><ns1:std_street>1501 WYNKOOP ST</ns1:std_street><ns1:std_city>DENVER</ns1:std_city><ns1:std_state>CO</ns1:std_state><ns1:std_zip>80202</ns1:std_zip><ns1:addr_status>INVALID</ns1:addr_status><ns1:addr_validity_level>STREET</ns1:addr_validity_level><ns1:addr_score>160</ns1:addr_score><ns1:addr_cleansing_code>AMBIGUOUS_BUILDING CITY_DETERMINED CITY_MISSING SN_INVALID STREET_TYPE_MISSING</ns1:addr_cleansing_code><ns1:std_phone>626.203.9137</ns1:std_phone></ns1:clean_employeeResponse></soap:Body></soap:Envelope>
+[TRANSFORM DEBUG] Base URL:file:/C:/iway611/config/6B3AFB23AF98CF32D26BC3E84DE48E18/transforms/3422D31EC6B6DDFD506D0E14239DD8B4/
+[TRANSFORM DEBUG] Transform process started:
+[TRANSFORM DEBUG] Base url: file:/C:/iway611/config/6B3AFB23AF98CF32D26BC3E84DE48E18/transforms/3422D31EC6B6DDFD506D0E14239DD8B4/
+[TRANSFORM DEBUG] Input format:XML
+[TRANSFORM DEBUG] Input source type: Node
+[TRANSFORM DEBUG] Output format:XML
+[TRANSFORM DEBUG] Output configuration format:XML
+[TRANSFORM DEBUG] Output target type: Content Handler
+[TRANSFORM DEBUG] Is pipelining enabled? :false
+[TRANSFORM DEBUG] Is the declaration needed in the output? :true
+[TRANSFORM DEBUG] Output Formatter to be used: null
+[TRANSFORM DEBUG] Started writing to Content Handler
+[TRANSFORM DEBUG] Transform process ended
+xable - after unlocked execute of Transform Employee Object for PeopleSoft Insertion retval=success
+node Transform Employee Object for PeopleSoft Insertion returned edges: success
+Before call to PeopleSoft - isdsrv12
+pflow performing PeopleSoft - isdsrv12 from Transform Employee Object for PeopleSoft Insertion on edge $complete, type Agent
+Activating adapter
+activate()
+Failed to activate adapter: java.lang.Exception: Error Logon to PeopleSoft System
+Converting fail_operation to error
+Detected problem in executeof agent 'PeopleSoft - isdsrv12' on execute: Failed to activate adapter: java.lang.Exception: Error Logon to PeopleSoft System
+xable - after unlocked execute of PeopleSoft - isdsrv12 retval=$error
+node PeopleSoft - isdsrv12 returned edges: $error
+Entering error processing with edge $error
+PeopleSoft - isdsrv12 WONT follow success
+Before call to Store Failure Message
+pflow performing Store Failure Message from PeopleSoft - isdsrv12 on edge $error, type Agent
+no preemitters, emitting contents of doc, usestream=false encoding=UTF-8
+xable - after unlocked execute of Store Failure Message retval=success
+node Store Failure Message returned edges: success
+Before call to Email Operations Team
+pflow performing Email Operations Team from Store Failure Message on edge $complete, type Agent
+host: ibiwebmail7.ibi.com
+to: alan_tsang@ibi.com
+subject: Employee Sync Failed
+from: alan_tsang@ibi.com
+cc: null
+bcc: null
+replyto: null
+body: null
+attach tag: null
+inbound as attachment: false
+content type: null
+email body: '<emitstatus status="0"><protocol>FILE</protocol><parms><parm name="append">false</parm><parm name="appendcrlf">false</parm><parm name="b64">false</parm><parm name="directory">C:\Alan\out</parm><parm name="location"/><parm name="nopreemit">true</parm><parm name="pattern">create_employee_ps_*.txt</parm><parm name="return">status</parm><parm name="trans">false</parm><parm name="wanteos">false</parm></parms><timestamp>2011-11-09T21:21:09.712Z</timestamp><status>0</status><channel>ExecProcess</channel><nodename>agent_Store Failure Message</nodename><count>1</count><name>C:\Alan\out\create_employee_ps_2011-11-09T21_21_09_672Z.txt</name></emitstatus>'
+using plain SMTP
+javax.mail.MessagingException: Unknown SMTP host: ibiwebmail7.ibi.com;
+  nested exception is:
+	java.net.UnknownHostException: ibiwebmail7.ibi.com
+email to alan_tsang@ibi.com, status 1
+outbound doc: <emitStatus><protocol>EMAIL</protocol><parms>to=alan_tsang@ibi.com, host=ibiwebmail7.ibi.com, subject=Employee Sync Failed, return=status, docattach=false, from=alan_tsang@ibi.com, password=****, usessl=none, </parms><status>1</status><msg>messaging error sending reply: javax.mail.MessagingException: Unknown SMTP host: ibiwebmail7.ibi.com;
+  nested exception is:
+	java.net.UnknownHostException: ibiwebmail7.ibi.com</msg><timestamp>2011-11-09T21:21:09.862Z</timestamp><attempts>1</attempts><name>alan_tsang@ibi.com</name></emitStatus>
+xable - after unlocked execute of Email Operations Team retval=fail_connect
+node Email Operations Team returned edges: fail_connect
+Before call to End
+pflow performing End from Email Operations Team on edge $complete, type Terminate
+Pflow thread stopping at End
+Ending pflow, number of subthreads still running=0
+back from pflow, doc count=8
+commit is set to TRUE; pflow will be COMMITTED
+Issuing local transaction commit
+commitTX: Transaction has no entries: 57ddb322-9250-493c-b528-2fdf99080d07
+passivate()
+shutting down system scheduler
+system scheduler stopped
+terminating pools
+Stopping the application manager
+Destroying pool...
+Releasing work threads...
+Waiting work threads to end....
+Ending pool threads...
+Pool destruction completed.
+in endThreads, we start with 0 threadgroups
+Tearing down XDManager
+shutting down system scheduler
+system scheduler stopped
+enter stopall fromChild=false state=inactive
+already stopped[2]...; state=inactive
+console master stopped
+terminating pools
+terminating providers
+providers terminated
+releasing transformer

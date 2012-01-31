@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8" ?><emitStatus><protocol>EMAIL</protocol><parms>to=alan_tsang@ibi.com, host=ibiwebmail7.ibi.com, subject=Employee Sync Failed, return=status, docattach=false, from=alan_tsang@ibi.com, password=****, usessl=none, </parms><status>1</status><msg>messaging error sending reply: javax.mail.MessagingException: Unknown SMTP host: ibiwebmail7.ibi.com;
+  nested exception is:
+	java.net.UnknownHostException: ibiwebmail7.ibi.com</msg><timestamp>2011-11-09T21:21:09.862Z</timestamp><attempts>1</attempts><name>alan_tsang@ibi.com</name></emitStatus>

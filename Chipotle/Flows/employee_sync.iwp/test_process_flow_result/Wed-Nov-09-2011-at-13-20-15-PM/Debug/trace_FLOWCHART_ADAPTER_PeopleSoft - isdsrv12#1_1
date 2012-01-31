@@ -1,0 +1,26 @@
+Name=PeopleSoft - isdsrv12  Type=Agent  InEdge=OnCompletion  From=Transform Employee Object for PeopleSoft Insertion  Not nested
+Registers
+     ADDED > initparms           [CFG]   {persistconnection=false, descriptor=ad...[261]
+             doclocation         [SYS]   config
+             engine              [SYS]   DDA9564B610AE783485508978D77E6CE
+   CHANGED > iway.lastnode       [SYS]   PeopleSoft - isdsrv12
+             iway.pid            [SYS]   3988
+   CHANGED > iway.priornode      [SYS]   Transform Employee Object for PeopleSof...[50]
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.179
+             iwayconfig          [SYS]   DDA9564B610AE783485508978D77E6CE
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/DDA9564B610AE78348550...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   0f6f8863-05d2-4a97-8fc4-220f2a83bac0
+Content of document
+	Form=xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+<PS8>
+   <error>Row already exists with the specified keys. {CI_PERSONAL_DATA} (91,49)Failed to execute PSBusComp request  Distributed Object Manager: User ID=PROP_EMPLID Query=%2 (1,16)Distributed Object Manager: User ID=PROP_EMPLID Query=%2 (1,16)Distributed Object Manager: Page=PROP_EMPLID Language=%2 (1,4)</error>
+</PS8>

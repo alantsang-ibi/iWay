@@ -1,0 +1,21 @@
+Name=End  Type=Terminate  InEdge=OnCompletion  From=Email Operations Team  Not nested
+Registers
+             doclocation         [SYS]   config
+             engine              [SYS]   6B3AFB23AF98CF32D26BC3E84DE48E18
+             iway.lastnode       [SYS]   Email Operations Team
+             iway.pid            [SYS]   3988
+             iway.priornode      [SYS]   Store Failure Message
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.179
+             iwayconfig          [SYS]   6B3AFB23AF98CF32D26BC3E84DE48E18
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/6B3AFB23AF98CF32D26BC...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   57ddb322-9250-493c-b528-2fdf99080d07
+             emit.file.filename  [USR]   C:\Alan\out\create_employee_ps_2011-11-...[59]
+Object type does not support document display

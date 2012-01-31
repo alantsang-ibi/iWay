@@ -1,0 +1,16 @@
+Name=Start  Type=Start  InEdge=success  From=begin  Not nested
+Registers
+     ADDED > engine              [SYS]   F88EE85D822D681227C6E0C8747B11B4
+     ADDED > iway.pid            [SYS]   27548
+     ADDED > iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+     ADDED > iway.serverhost     [SYS]   INFORMA-F7T131V
+     ADDED > iway.serverip       [SYS]   172.30.147.62
+     ADDED > iwayconfig          [SYS]   F88EE85D822D681227C6E0C8747B11B4
+     ADDED > iwayhome            [SYS]   C:/iway611/
+     ADDED > iwayversion         [SYS]   6.1.1
+     ADDED > iwayworkdir         [SYS]   C:/iway611/config/F88EE85D822D681227C6E...[50]
+     ADDED > name                [SYS]   ExecProcess
+     ADDED > protocol            [SYS]   Lcl
+     ADDED > iway.flowname       [DOC]   flowTest
+     ADDED > tid                 [DOC]   a4da7e4d-a5e4-43b1-aeef-31bc54cc357d
+Object type does not support document display

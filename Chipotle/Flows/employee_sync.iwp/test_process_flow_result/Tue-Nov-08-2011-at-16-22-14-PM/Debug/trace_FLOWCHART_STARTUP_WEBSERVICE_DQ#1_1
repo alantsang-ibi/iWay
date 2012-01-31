@@ -1,0 +1,42 @@
+Name=DQ  Type=Agent  InEdge=OnCompletion  From=Start  Not nested
+Registers
+             doclocation         [SYS]   config
+             engine              [SYS]   64D5627A3B86D0286AC21AAABEE8897C
+     ADDED > iway.lastnode       [SYS]   DQ
+             iway.pid            [SYS]   3988
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.59
+             iwayconfig          [SYS]   64D5627A3B86D0286AC21AAABEE8897C
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/64D5627A3B86D0286AC21...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   eb3a4f7a-9c64-4004-b595-673b1c5358fb
+Content of document
+	Form=xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://www.example.com/ws">
+   <soap:Body>
+      <ns1:clean_employeeResponse>
+         <ns1:ssn>999-99-9995</ns1:ssn>
+         <ns1:firstname>John</ns1:firstname>
+         <ns1:lastname>Tsang</ns1:lastname>
+         <ns1:street>608 Sefton Ave</ns1:street>
+         <ns1:city>montrey park</ns1:city>
+         <ns1:state>ca</ns1:state>
+         <ns1:zip>91755</ns1:zip>
+         <ns1:std_street>608 SEFTON AVE</ns1:std_street>
+         <ns1:std_city>MONTEREY PARK</ns1:std_city>
+         <ns1:std_state>CA</ns1:std_state>
+         <ns1:std_zip>91755-4148</ns1:std_zip>
+         <ns1:addr_status>CORRECTED_LOW</ns1:addr_status>
+         <ns1:addr_validity_level>DELIVERY_POINT</ns1:addr_validity_level>
+         <ns1:addr_score>50</ns1:addr_score>
+         <ns1:addr_cleansing_code>CITY_CORRECTED</ns1:addr_cleansing_code>
+      </ns1:clean_employeeResponse>
+   </soap:Body>
+</soap:Envelope>

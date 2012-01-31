@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mappingbuilder="http://iwtrans.iwaysoftware.com/mappingbuilder" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_SRjckQnMEeGuydSj31Bzcg" type="MappingBuilder" name=".mapping_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_SSLusAnMEeGuydSj31Bzcg" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_STEfgAnMEeGuydSj31Bzcg" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_STGUsAnMEeGuydSj31Bzcg" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_STGUsQnMEeGuydSj31Bzcg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_STGUsgnMEeGuydSj31Bzcg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_STGUswnMEeGuydSj31Bzcg"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_SSLusQnMEeGuydSj31Bzcg" fontName="Segoe UI"/>
+    <element xmi:type="mappingbuilder:Function" href=".mapping_model#//@map/@function"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SSLusgnMEeGuydSj31Bzcg"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_SRjckgnMEeGuydSj31Bzcg"/>
+  <element xmi:type="mappingbuilder:Map" href="/Chipotle/Transforms/employee_dq_ps.gxp/.mapping_model#//@map"/>
+</notation:Diagram>

@@ -1,0 +1,25 @@
+Name=isdsrv12  Type=Agent  InEdge=OnCompletion  From=Start  Not nested
+Registers
+     ADDED > initparms           [CFG]   {persistconnection=false, descriptor=ad...[261]
+             doclocation         [SYS]   config
+             engine              [SYS]   CA07EDD6B425DE6A3E31167DC62149A4
+     ADDED > iway.lastnode       [SYS]   isdsrv12
+             iway.pid            [SYS]   21880
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.62
+             iwayconfig          [SYS]   CA07EDD6B425DE6A3E31167DC62149A4
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/CA07EDD6B425DE6A3E311...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   a7d848d5-f620-4451-a99d-dde5d1076a6a
+Content of document
+	Form=xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+<PS8>
+   <error>An Organizational Relationship must be created for this Person. (1000,1176)Error saving Component Interface. {CI_PERSONAL_DATA} (91,37)Failed to execute PSBusComp request  </error>
+</PS8>

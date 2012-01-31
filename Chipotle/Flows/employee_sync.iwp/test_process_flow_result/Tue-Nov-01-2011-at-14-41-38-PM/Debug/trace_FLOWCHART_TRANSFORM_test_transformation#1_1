@@ -1,0 +1,24 @@
+Name=test_transformation  Type=Agent  InEdge=OnCompletion  From=Start  Not nested
+Registers
+             doclocation         [SYS]   config
+             engine              [SYS]   35AA5996AC19301E59D98B4FA2614639
+     ADDED > iway.lastnode       [SYS]   test_transformation
+             iway.pid            [SYS]   556
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   192.168.122.1
+             iwayconfig          [SYS]   35AA5996AC19301E59D98B4FA2614639
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/35AA5996AC19301E59D98...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   04d4e7a9-3e27-4b20-9543-5505b73720cb
+Content of document
+	Form=xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+<Target_Root>
+   <name>A SOA programmer</name>
+</Target_Root>

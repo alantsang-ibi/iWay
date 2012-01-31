@@ -1,0 +1,42 @@
+Name=DQ  Type=Agent  InEdge=OnCompletion  From=Start  Not nested
+Registers
+             doclocation         [SYS]   config
+             engine              [SYS]   72ECDB5A0F7245F4C60D7E5E9F78BDAE
+     ADDED > iway.lastnode       [SYS]   DQ
+             iway.pid            [SYS]   3988
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.115
+             iwayconfig          [SYS]   72ECDB5A0F7245F4C60D7E5E9F78BDAE
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/72ECDB5A0F7245F4C60D7...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   1738a1f1-2f29-4e8e-b61a-76caf70070d1
+Content of document
+	Form=xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://www.example.com/ws">
+   <soap:Body>
+      <ns1:clean_employeeResponse>
+         <ns1:ssn>999-99-9997</ns1:ssn>
+         <ns1:firstname>Alan</ns1:firstname>
+         <ns1:lastname>Tsang</ns1:lastname>
+         <ns1:street>608 Sefton Ave</ns1:street>
+         <ns1:city>monterey park</ns1:city>
+         <ns1:state>ca</ns1:state>
+         <ns1:zip>91755</ns1:zip>
+         <ns1:std_street>608 SEFTON AVE</ns1:std_street>
+         <ns1:std_city>MONTEREY PARK</ns1:std_city>
+         <ns1:std_state>CA</ns1:std_state>
+         <ns1:std_zip>91755-4148</ns1:std_zip>
+         <ns1:addr_status>VALID</ns1:addr_status>
+         <ns1:addr_validity_level>DELIVERY_POINT</ns1:addr_validity_level>
+         <ns1:addr_score>0</ns1:addr_score>
+         <ns1:addr_cleansing_code xsi:nil="true"/>
+      </ns1:clean_employeeResponse>
+   </soap:Body>
+</soap:Envelope>

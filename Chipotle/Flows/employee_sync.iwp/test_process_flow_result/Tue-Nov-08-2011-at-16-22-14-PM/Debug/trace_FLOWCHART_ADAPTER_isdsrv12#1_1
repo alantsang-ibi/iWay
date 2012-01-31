@@ -1,0 +1,25 @@
+Name=isdsrv12  Type=Agent  InEdge=OnCompletion  From=employee_dq_ps  Not nested
+Registers
+             doclocation         [SYS]   config
+             engine              [SYS]   64D5627A3B86D0286AC21AAABEE8897C
+   CHANGED > iway.lastnode       [SYS]   isdsrv12
+             iway.pid            [SYS]   3988
+   CHANGED > iway.priornode      [SYS]   employee_dq_ps
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.59
+             iwayconfig          [SYS]   64D5627A3B86D0286AC21AAABEE8897C
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/64D5627A3B86D0286AC21...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   eb3a4f7a-9c64-4004-b595-673b1c5358fb
+Content of document
+	Form=xml, state=error
+	<?xml version="1.0" encoding="UTF-8" ?>
+<eda>
+   <error timestamp="2011-11-09T00:22:14Z" code="6" stage="AGENT" source="isdsrv12">XD[FAIL] cause: 0 subcause: 0 message: Failed to activate adapter: java.lang.Exception: Error Logon to PeopleSoft System</error>
+</eda>

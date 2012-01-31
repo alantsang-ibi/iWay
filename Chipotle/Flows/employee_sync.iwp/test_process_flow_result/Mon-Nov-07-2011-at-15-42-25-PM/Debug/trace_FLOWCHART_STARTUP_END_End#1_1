@@ -1,0 +1,20 @@
+Name=End  Type=Terminate  InEdge=OnCompletion  From=isdsrv12  Not nested
+Registers
+             initparms           [CFG]   {persistconnection=false, descriptor=ad...[261]
+             doclocation         [SYS]   config
+             engine              [SYS]   68B99EC02289273B3640DFBC9C5505A5
+             iway.lastnode       [SYS]   isdsrv12
+             iway.pid            [SYS]   21880
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.62
+             iwayconfig          [SYS]   68B99EC02289273B3640DFBC9C5505A5
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/68B99EC02289273B3640D...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   419aa5c9-7511-4a48-aad6-902481c5c8e1
+Object type does not support document display

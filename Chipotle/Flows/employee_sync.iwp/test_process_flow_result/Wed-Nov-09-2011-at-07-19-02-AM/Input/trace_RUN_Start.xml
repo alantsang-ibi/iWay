@@ -1,0 +1,10 @@
+<ws:clean_employee xmlns:ws="http://www.example.com/ws">
+	<ws:ssn>999-99-9992</ws:ssn>
+	<ws:firstname>Bobbi</ws:firstname>
+	<ws:lastname>Tsang</ws:lastname>
+	<ws:street>1501 Wynkoop</ws:street>
+	<ws:city></ws:city>
+	<ws:state>co</ws:state>
+	<ws:zip>80202</ws:zip>
+	<ws:phone>(626)203-9137</ws:phone>
+</ws:clean_employee>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PS8>
+    <component perform="insert">CI_PERSONAL_DATA</component>
+    <key name="KEYPROP_EMPLID">IW_AT_99</key>
+    <PROP_EMPLID>IW_AT_99</PROP_EMPLID>
+    <PROP_BIRTHDATE>11/11/1992</PROP_BIRTHDATE>
+    <PROP_BIRTHPLACE>USA</PROP_BIRTHPLACE>
+    <PROP_BIRTHCOUNTRY>USA</PROP_BIRTHCOUNTRY>
+    <PROP_BIRTHSTATE>CA</PROP_BIRTHSTATE>
+    <PROP_DT_OF_DEATH />
+    <PROP_DERIVED_EMP>N</PROP_DERIVED_EMP>
+    <PROP_DERIVED_CWR />
+    <PROP_DERIVED_POI />
+    <PROP_POI_TYPE />
+    <PROP_WAIVE_DATA_PROTECT />
+    <PROP_CAN_ABORIGINAL />
+    <PROP_CAN_VISBL_MINORITY />
+    <PROP_ETHNIC_GRP_CD_UK />
+    <PROP_NI_COMMUNITY_BG />
+    <PROP_NI_CB_DET_METHOD />
+    <PROP_NI_CB_DET_DATE />
+    <EXP_RETIRE_DT />
+    <COLL_NAME_TYPE_VW action="" row="">
+        <KEYPROP_NAME_TYPE />
+        <COLL_NAMES action="" row="">
+            <KEYPROP_NAME_TYPE />
+            <KEYPROP_EFFDT />
+            <PROP_COUNTRY_NM_FORMAT />
+            <PROP_NAME_INITIALS />
+            <PROP_NAME_PREFIX />
+            <PROP_NAME_SUFFIX />
+            <PROP_NAME_ROYAL_PREFIX />
+            <PROP_NAME_ROYAL_SUFFIX />
+            <PROP_NAME_TITLE />
+            <PROP_LAST_NAME />
+            <PROP_FIRST_NAME />
+            <PROP_MIDDLE_NAME />
+            <PROP_SECOND_LAST_NAME />
+            <PROP_NAME_AC />
+            <PROP_PREF_FIRST_NAME />
+            <PROP_PARTNER_LAST_NAME />
+            <PROP_PARTNER_ROY_PREFIX />
+            <PROP_LAST_NAME_PREF_NLD />
+        </COLL_NAMES>
+    </COLL_NAME_TYPE_VW>
+    <COLL_PERS_DATA_EFFDT action="" row="">
+        <KEYPROP_EFFDT />
+        <PROP_MAR_STATUS />
+        <PROP_MAR_STATUS_DT />
+        <PROP_SEX />
+        <PROP_HIGHEST_EDUC_LVL />
+        <PROP_FT_STUDENT />
+        <PROP_LANG_CD />
+        <PROP_ALTER_EMPLID />
+        <COLL_PERS_DATA_USF action="" row="">
+            <KEYPROP_EFFDT />
+            <PROP_GVT_CRED_MIL_SVCE />
+            <PROP_GVT_MILITARY_COMP />
+            <PROP_GVT_MIL_GRADE />
+            <PROP_GVT_MIL_RESRVE_CAT />
+            <PROP_GVT_MIL_SEP_RET />
+            <PROP_GVT_MIL_SVCE_END />
+            <PROP_GVT_MIL_SVCE_START />
+            <PROP_GVT_MIL_VERIFY />
+            <PROP_GVT_PAR_NBR_LAST />
+            <PROP_GVT_UNIF_SVC_CTR />
+            <PROP_GVT_VET_PREF_APPT />
+            <PROP_GVT_VET_PREF_RIF />
+            <PROP_GVT_CHANGE_FLAG />
+            <PROP_GVT_DRAFT_STATUS />
+            <PROP_GVT_YR_ATTAINED />
+            <PROP_DISABLED_VET />
+            <PROP_DISABLED />
+            <PROP_GVT_DISABILITY_CD />
+            <PROP_GRADE />
+            <PROP_SAL_ADMIN_PLAN />
+            <PROP_GVT_CURR_AGCY_EMPL />
+            <PROP_GVT_CURR_FED_EMPL />
+            <PROP_GVT_HIGH_PAY_PLAN />
+            <PROP_GVT_HIGH_GRADE />
+            <PROP_GVT_PREV_AGCY_EMPL />
+            <PROP_GVT_PREV_FED_EMPL />
+            <PROP_GVT_SEP_INCENTIVE />
+            <PROP_GVT_SEP_INCENT_DT />
+            <PROP_GVT_TENURE />
+            <PROP_GVT_PAY_PLAN />
+            <PROP_BARG_UNIT />
+        </COLL_PERS_DATA_USF>
+    </COLL_PERS_DATA_EFFDT>
+    <COLL_PERS_NID action="" row="">
+        <KEYPROP_COUNTRY />
+        <KEYPROP_NATIONAL_ID_TYPE />
+        <PROP_SSN_KEY_FRA>999-99-9999</PROP_SSN_KEY_FRA>
+        <PROP_PRIMARY_NID />
+        <PROP_TAX_REF_ID_SGP />
+        <PROP_NATIONAL_ID />
+        <PROP_EXPIRY_DATE />
+    </COLL_PERS_NID>
+    <COLL_ADDRESS_TYPE_VW action="" row="">
+        <KEYPROP_ADDRESS_TYPE />
+        <COLL_ADDRESSES action="" row="">
+            <KEYPROP_ADDRESS_TYPE />
+            <KEYPROP_EFFDT />
+            <PROP_EFF_STATUS />
+            <PROP_COUNTRY />
+            <PROP_ADDRESS1 />
+            <PROP_ADDRESS2 />
+            <PROP_ADDRESS3 />
+            <PROP_ADDRESS4 />
+            <PROP_CITY />
+            <PROP_NUM1 />
+            <PROP_NUM2 />
+            <PROP_HOUSE_TYPE />
+            <PROP_ADDR_FIELD1 />
+            <PROP_ADDR_FIELD2 />
+            <PROP_ADDR_FIELD3 />
+            <PROP_COUNTY />
+            <PROP_STATE />
+            <PROP_POSTAL />
+            <PROP_GEO_CODE />
+            <PROP_IN_CITY_LIMIT />
+            <PROP_ADDRESS1_AC />
+            <PROP_ADDRESS2_AC />
+            <PROP_ADDRESS3_AC />
+            <PROP_CITY_AC />
+            <PROP_REG_REGION />
+        </COLL_ADDRESSES>
+    </COLL_ADDRESS_TYPE_VW>
+    <COLL_PERSONAL_PHONE action="" row="">
+        <KEYPROP_PHONE_TYPE />
+        <PROP_COUNTRY_CODE />
+        <PROP_PHONE />
+        <PROP_EXTENSION />
+        <PROP_PREF_PHONE_FLAG />
+    </COLL_PERSONAL_PHONE>
+    <COLL_EMAIL_ADDRESSES action="" row="">
+        <KEYPROP_E_ADDR_TYPE />
+        <PROP_EMAIL_ADDR />
+        <PROP_PREF_EMAIL_FLAG />
+    </COLL_EMAIL_ADDRESSES>
+    <COLL_DIVERS_ETHNIC action="" row="">
+        <KEYPROP_REG_REGION />
+        <KEYPROP_ETHNIC_GRP_CD />
+        <PROP_PRIMARY_INDICATOR />
+    </COLL_DIVERS_ETHNIC>
+    <COLL_DIVERS_RELIGION action="" row="">
+        <KEYPROP_REG_REGION />
+        <PROP_RELIGION_CD />
+        <PROP_BLOOD_TYPE />
+    </COLL_DIVERS_RELIGION>
+    <COLL_PERSON_BRA action="" row="">
+        <PROP_RG_ISSUEDBY_BRA />
+        <PROP_RG_ISSUED_DT_BRA />
+        <PROP_RG_STATE_BRA />
+        <PROP_CTPS_SERIES_BRA />
+        <PROP_CTPS_EXP_DT_BRA />
+        <PROP_CTPS_STATE_BRA />
+        <PROP_VOTER_ZONE_BRA />
+        <PROP_VOTER_SECTION_BRA />
+        <PROP_VOTER_CITY_BRA />
+        <PROP_VOTER_STATE_BRA />
+        <PROP_MILITAR_SERIES_BRA />
+        <PROP_MILITAR_REGION_BRA />
+        <PROP_MILITAR_STATE_BRA />
+        <PROP_MIL_CERT_TYPE_BRA />
+        <PROP_MILITAR_CAT_BRA />
+        <PROP_PIS_PASEP_DT_BRA />
+    </COLL_PERSON_BRA>
+    <COLL_PERS_DATA_BRA action="" row="">
+        <KEYPROP_EFFDT />
+        <PROP_REG_REGION />
+        <PROP_ETHNIC_GRP_CD />
+        <PROP_NATIONALITY_CD_BRA />
+        <PROP_EDUCATION_LVL_BRA />
+        <PROP_SETID />
+        <PROP_BLOOD_TYPE />
+    </COLL_PERS_DATA_BRA>
+    <COLL_PERS_DATA_CAN action="" row="">
+        <KEYPROP_EFFDT />
+        <PROP_BILINGUALISM_CODE />
+        <PROP_HEALTH_CARE_NBR />
+        <PROP_HEALTH_CARE_STATE />
+    </COLL_PERS_DATA_CAN>
+    <COLL_PERS_SMOKER action="" row="">
+        <KEYPROP_SMOKER_DT />
+        <PROP_SMOKER />
+    </COLL_PERS_SMOKER>
+    <COLL_PERS_DATA_CHE action="" row="">
+        <KEYPROP_EFFDT />
+        <PROP_GUARDIAN_CHE />
+    </COLL_PERS_DATA_CHE>
+    <COLL_PLACE_ORIG_CHE action="" row="">
+        <PROP_ORIGIN_CHE />
+        <PROP_MAIN_ORIG_CHE />
+    </COLL_PLACE_ORIG_CHE>
+    <COLL_PERS_HUKOU_CHN action="" row="">
+        <KEYPROP_EFFDT />
+        <KEYPROP_HUKOU_TYPE_CHN />
+        <KEYPROP_CONTRIB_AREA_CHN />
+    </COLL_PERS_HUKOU_CHN>
+    <COLL_PERS_WRKLIF_CHN action="" row="">
+        <KEYPROP_START_DT_CHN />
+    </COLL_PERS_WRKLIF_CHN>
+    <COLL_PERS_WRKLV_CHN action="" row="">
+        <KEYPROP_EFFDT />
+        <PROP_WRKLV_STATUS_CHN />
+        <PROP_DT_ISSUED />
+        <PROP_WRKLV_RENEW_DT_CHN />
+        <PROP_EXPIRATN_DT />
+    </COLL_PERS_WRKLV_CHN>
+    <COLL_PERS_DATA_DEU action="" row="">
+        <KEYPROP_EFFDT />
+        <PROP_MILITARY_STAT_GER />
+        <PROP_EXPCTD_MILITARY_DT />
+        <PROP_HR_RESPONSIBLE_ID />
+    </COLL_PERS_DATA_DEU>
+    <COLL_NATIONALITY_GER action="" row="">
+        <KEYPROP_NATIONALITY_DT />
+        <KEYPROP_NATION_CD />
+    </COLL_NATIONALITY_GER>
+    <COLL_PERS_DATA_ESP action="" row="">
+        <KEYPROP_EFFDT />
+        <PROP_MILIT_SITUATN_ESP />
+        <PROP_SOC_SEC_AFF_DT />
+    </COLL_PERS_DATA_ESP>
+    <COLL_PERSON_FRA action="" row="">
+        <PROP_WRK_EXP_FRA_CD />
+    </COLL_PERSON_FRA>
+    <COLL_PERS_DATA_FRA action="" row="">
+        <KEYPROP_EFFDT />
+        <PROP_ENTRY_DT_FRA />
+        <PROP_MILIT_SITUATN_FRA />
+        <PROP_CPAMID />
+    </COLL_PERS_DATA_FRA>
+    <COLL_PERS_DATA_IND action="" row="">
+        <KEYPROP_EFFDT />
+        <PROP_GPIN_CASTE />
+    </COLL_PERS_DATA_IND>
+    <COLL_PERS_DATA_ITA action="" row="">
+        <KEYPROP_EFFDT />
+        <PROP_MILITARY_STAT_ITA />
+        <PROP_MILITARY_TYPE_ITA />
+        <PROP_MILITARY_RANK_ITA />
+        <PROP_MILITARY_END_ITA />
+    </COLL_PERS_DATA_ITA>
+    <COLL_PERS_DATA_JPN action="" row="">
+        <KEYPROP_EFFDT />
+        <PROP_HONSEKI_JPN />
+    </COLL_PERS_DATA_JPN>
+    <COLL_PERS_DATA_MEX action="" row="">
+        <KEYPROP_EFFDT />
+        <KEYPROP_AFORE_MEX />
+        <PROP_MED_REC_CD_MEX />
+    </COLL_PERS_DATA_MEX>
+    <COLL_PERS_DATA_USA action="" row="">
+        <KEYPROP_EFFDT />
+        <PROP_US_WORK_ELIGIBILTY />
+        <PROP_MILITARY_STATUS />
+        <PROP_CITIZEN_PROOF1 />
+        <PROP_CITIZEN_PROOF2 />
+        <PROP_MEDICARE_ENTLD_DT />
+        <PROP_PRIORVAL_MED_ENTDT />
+    </COLL_PERS_DATA_USA>
+</PS8>
+

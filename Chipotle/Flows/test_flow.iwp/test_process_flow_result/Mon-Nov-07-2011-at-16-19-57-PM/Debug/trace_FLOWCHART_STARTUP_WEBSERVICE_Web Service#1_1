@@ -1,0 +1,53 @@
+Name=Web Service  Type=Agent  InEdge=OnCompletion  From=Start  Not nested
+Registers
+             doclocation         [SYS]   config
+             engine              [SYS]   9C1DE86F6B39CD3F27522C5E14A24300
+     ADDED > iway.lastnode       [SYS]   Web Service
+             iway.pid            [SYS]   21880
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.62
+             iwayconfig          [SYS]   9C1DE86F6B39CD3F27522C5E14A24300
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/9C1DE86F6B39CD3F27522...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   446ce790-28ca-40f7-833b-6b8320e37fe8
+Content of document
+	Form=xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <soap:Fault>
+         <faultcode>soap:Client</faultcode>
+         <faultstring>Exactly one element of name clean_employee is required.</faultstring>
+         <detail xmlns:e="http://www.ataccama.com/ws/error">
+            <e:error>
+               <e:code>com.ataccama.dqc.online.dataaccessor.ParseException</e:code>
+               <e:arguments>Exactly one element of name clean_employee is required.</e:arguments>
+               <e:detailMessage>com.ataccama.dqc.online.soap.SOAPException: Exactly one element of name clean_employee is required.
+	at com.ataccama.dqc.online.io.SoapReceiver.handleRequest(SoapReceiver.java:145)
+	at com.ataccama.dqc.online.soap.SoapDispatcher.handleSoapRequest(SoapDispatcher.java:172)
+	at com.ataccama.dqc.online.soap.SoapDispatcher.handleRequest(SoapDispatcher.java:71)
+	at com.ataccama.dqc.web.FilterChainImpl.doFilter(FilterChainImpl.java:33)
+	at com.ataccama.dqc.web.filters.AuthorizationFilter.doFilter(AuthorizationFilter.java:77)
+	at com.ataccama.dqc.web.FilterChainImpl.doFilter(FilterChainImpl.java:31)
+	at com.ataccama.dqc.web.HttpListener$HandleRequestTask.run(HttpListener.java:449)
+	at com.ataccama.dqc.commons.util.ThreadPool$PoolWorker.run(ThreadPool.java:197)
+Caused by: com.ataccama.dqc.online.dataaccessor.ParseException: Exactly one element of name clean_employee is required.
+	at com.ataccama.dqc.online.dataaccessor.SingleRequiredStrategy.readData(SingleRequiredStrategy.java:26)
+	at com.ataccama.dqc.online.dataaccessor.StructProperty.readXml(StructProperty.java:109)
+	at com.ataccama.dqc.online.XmlDataParser.parseData(XmlDataParser.java:65)
+	at com.ataccama.dqc.online.io.SoapDataParser.parseData(SoapDataParser.java:63)
+	at com.ataccama.dqc.online.io.BaseReceiver.execute(BaseReceiver.java:92)
+	at com.ataccama.dqc.online.io.SoapReceiver.handleRequest(SoapReceiver.java:139)
+	... 7 more
+</e:detailMessage>
+            </e:error>
+         </detail>
+      </soap:Fault>
+   </soap:Body>
+</soap:Envelope>

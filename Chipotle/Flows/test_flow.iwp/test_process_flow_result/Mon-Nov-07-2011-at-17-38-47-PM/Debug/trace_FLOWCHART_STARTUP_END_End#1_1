@@ -1,0 +1,19 @@
+Name=End  Type=Terminate  InEdge=OnCompletion  From=Service  Not nested
+Registers
+             doclocation         [SYS]   config
+             engine              [SYS]   C6E6C2222A1DCCB6E31E0DD4BCD59412
+             iway.lastnode       [SYS]   Service
+             iway.pid            [SYS]   27004
+             iway.serverfullhost [SYS]   INFORMA-F7T131V.ibi.com
+             iway.serverhost     [SYS]   INFORMA-F7T131V
+             iway.serverip       [SYS]   172.30.147.62
+             iwayconfig          [SYS]   C6E6C2222A1DCCB6E31E0DD4BCD59412
+             iwayhome            [SYS]   C:/iway611/
+             iwayversion         [SYS]   6.1.1
+             iwayworkdir         [SYS]   C:/iway611/config/C6E6C2222A1DCCB6E31E0...[50]
+             locale              [SYS]   en_us
+             name                [SYS]   ExecProcess
+             protocol            [SYS]   Lcl
+             iway.flowname       [DOC]   flowTest
+             tid                 [DOC]   1c361076-f7e4-4844-beed-4f642bcb56b1
+Object type does not support document display

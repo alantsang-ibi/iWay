@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IWAY xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.iwaysoftware.com/designer/model">
+  <SERVER NAME="iWay Registry">
+    <PROCESSFLOW DESCRIPTION="" IWAYVERSION="6.1.1" NAME="employee_sync" TIMEOUT="0">
+      <OBJECTS>
+        <OBJECT CLASS="start" DEACTIVATE="false" DESCRIPTION="Start Object" ETAP="false" ID="start" KEY="1" NAME="Start - Employee Update Event Triggered" POS_LEFT="34" POS_TOP="156" TYPE="FLOWCHART_STARTUP_START" UDOUID="" XDEBUG="std" XDEBUGHIGH="1" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="General">
+                <PROPERTYITEM DISPLAY="No" HIDDEN="false" ITEMTYPE="boolean" LABEL="Debug" NAME="Debug" REQUIRED="false" VALUE="true" VALUETYPE="boolean"/>
+              </GROUP>
+              <GUIDS/>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+          <RUNTIMEVARIABLES/>
+        </OBJECT>
+        <OBJECT CLASS="end" CLASSNAME="" DEACTIVATE="false" DESCRIPTION="End Object" ETAP="false" KEY="2" NAME="End" POS_LEFT="783" POS_TOP="155" TYPE="FLOWCHART_STARTUP_END" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GUIDS/>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="agent" CLASSNAME="com.ibi.agents.XDAdapterAgent" DEACTIVATE="false" DESCRIPTION="An iWay Service Adapter object represents a configured connection to a particular instance of a backed system." ETAP="false" ID="isdsrv12" KEY="4" NAME="PeopleSoft - isdsrv12" POS_LEFT="450" POS_TOP="156" TYPE="FLOWCHART_ADAPTER" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="General"/>
+              <GROUP NAME="Main">
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="containerUrl" REQUIRED="false" VALUE="http://localhost:9000" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="name" REQUIRED="false" VALUE="isdsrv12" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="target" REQUIRED="false" VALUE="PeopleSoft" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="descriptor" REQUIRED="false" VALUE="adapterData/4B4441D58071D33A2508070A16BEAB54/descriptor.xml" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="keys" REQUIRED="false" VALUE="adapterData/4B4441D58071D33A2508070A16BEAB54/keys.xml" VALUETYPE=""/>
+              </GROUP>
+              <GROUP NAME="User Defined"/>
+              <GUIDS>
+                <PROPERTYITEM GUID="4B4441D58071D33A2508070A16BEAB54" GUIDTYPE="adapter" NAME=""/>
+              </GUIDS>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="agent" CLASSNAME="com.ibi.agents.XDTransformAgent" DEACTIVATE="false" DESCRIPTION="When inserted into a process a Transform object will apply a selected transform to the payload of the current path of execution. " ETAP="false" ID="employee_dq_ps" KEY="3" NAME="Transform Employee Object" POS_LEFT="315" POS_TOP="156" TYPE="FLOWCHART_TRANSFORM" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="General">
+                <PROPERTYITEM DESCRIPTION="Type of transformation" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="engine" REQUIRED="false" VALUE="iway" VALUETYPE=""/>
+                <PROPERTYITEM DESCRIPTION="Defined transform name to execute" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="" NAME="transform" REQUIRED="false" VALUE="employee_dq_ps" VALUETYPE=""/>
+              </GROUP>
+              <GROUP NAME="User Defined"/>
+              <GUIDS>
+                <PROPERTYITEM GUID="3422D31EC6B6DDFD506D0E14239DD8B4" GUIDTYPE="transform" NAME="transform"/>
+              </GUIDS>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="agent" CLASSNAME="com.ibi.agents.XDWSClientAgent" DEACTIVATE="false" DESCRIPTION="Web Service Object" ETAP="false" KEY="5" NAME="Cleanse Employee Object" POS_LEFT="176" POS_TOP="155" TYPE="FLOWCHART_STARTUP_WEBSERVICE" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="General">
+                <PROPERTYITEM DISPLAY="No" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapheadertype" NAME="soapheadertype" REQUIRED="false" VALUE="&lt; Empty >" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="The Header of the WebService message. Can be a filename, transform, or actual data with SREG, XPATH, etc." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapheader" NAME="soapheader" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DISPLAY="No" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapbodytype" NAME="soapbodytype" REQUIRED="false" VALUE="&lt; Empty >" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="The Body of the WebService message. Can be a filename, transform, or actual data with SREG, XPATH, etc." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapbody" NAME="soapbody" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DISPLAY="No" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapresponsetype" NAME="soapresponsetype" REQUIRED="false" VALUE="&lt; Take No Action >" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Transformation for WebService Response" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapbody" NAME="soapresponse" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DISPLAY="No" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapfaulttype" NAME="soapfaulttype" REQUIRED="false" VALUE="&lt; Take No Action >" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Transformation or WebService response." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="soapfault" NAME="soapfault" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="If on, emit through proxy server" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combolist" LABEL="Proxy" NAME="proxy" REQUIRED="false" VALUE="false" VALUETYPE="boolean"/>
+                <PROPERTYITEM DESCRIPTION="Remove SOAP Envelope from Response Document." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combolist" LABEL="Strip Soap Envelope" NAME="soapenv" REQUIRED="false" VALUE="false" VALUETYPE="boolean"/>
+                <PROPERTYITEM DESCRIPTION="Network location where the web services has been deployed." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="END point" NAME="soapaddress" REQUIRED="true" VALUE="http://localhost:8888/clean_employee" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Value of SOAPAction header for HTTP." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="SOAP Action" NAME="soapaction" REQUIRED="false" VALUE="clean_employee" VALUETYPE="string"/>
+              </GROUP>
+              <GUIDS/>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+              <WSDL>
+                <PROPERTYITEM LACATION="http://localhost:8888/clean_employee?wsdl" SERVICE="Clean_employee"/>
+              </WSDL>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="agent" CLASSNAME="com.ibi.agents.XDFileEmitAgent" DEACTIVATE="false" DESCRIPTION="File Object" ETAP="false" KEY="6" NAME="Store Failure Message" POS_LEFT="551" POS_TOP="254" TYPE="FLOWCHART_STARTUP_FILE" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="Main">
+                <PROPERTYITEM DESCRIPTION="Source of data to write. If omitted, document will be used, else specify a data source location via xpath() function or any other function " DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Source of Data" NAME="location" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="The target output directory" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Target Directory" NAME="directory" REQUIRED="true" VALUE="C:\Alan\out" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="The output file name, which can contain a '*' which gets expanded to a fine timestamp" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="File Pattern" NAME="pattern" REQUIRED="true" VALUE="create_employee_ps_*.txt" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Should any preemitter be avoided?" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="boolean" LABEL="Avoid Preemitter" NAME="nopreemit" REQUIRED="false" VALUE="true" VALUETYPE="boolean"/>
+                <PROPERTYITEM DESCRIPTION="'status': status document will be the out document. 'input': in document will become the out document. 'swap': as input, but replace written data in the source nodes with the file name to which the data was written." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combolist" LABEL="Return" NAME="return" REQUIRED="false" VALUE="status" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="If set, the value is assumed to be in base64 notation. Only applicable if a specific write value is specified." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="boolean" LABEL="Base64 Decode " NAME="b64" REQUIRED="false" VALUE="false" VALUETYPE="boolean"/>
+                <PROPERTYITEM DESCRIPTION="If set, the emit respects the transactionality of the channel.  If not set, the emit is always done." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="boolean" LABEL="Respect Transactionality " NAME="trans" REQUIRED="true" VALUE="false" VALUETYPE="boolean"/>
+                <PROPERTYITEM DESCRIPTION="If set, the output will be appended to the file if it already exists" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="boolean" LABEL="Append" NAME="append" REQUIRED="false" VALUE="false" VALUETYPE="boolean"/>
+                <PROPERTYITEM DESCRIPTION="If set, a line termination sequence will be written after the document" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="boolean" LABEL="Append CRLF" NAME="appendcrlf" REQUIRED="false" VALUE="false" VALUETYPE="boolean"/>
+                <PROPERTYITEM DESCRIPTION="When using a streaming preparser in a channel, a last call is made AFTER the last document. Does this Service Exit want to be called?" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="boolean" LABEL="Call at EOS" NAME="wanteos" REQUIRED="false" VALUE="false" VALUETYPE="boolean"/>
+              </GROUP>
+              <GUIDS/>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+        <OBJECT CLASS="agent" CLASSNAME="com.ibi.agents.XDEmailEmitAgent" DEACTIVATE="false" DESCRIPTION="Email Object" ETAP="false" KEY="7" NAME="Email Operations Team" POS_LEFT="663" POS_TOP="253" TYPE="FLOWCHART_STARTUP_EMAIL" UDOUID="" XDEBUG="std" XDEBUGHIGH="10" XDEBUGLOW="1">
+          <USER>
+            <CUSTOMEVENT>
+              <VALUELIST/>
+            </CUSTOMEVENT>
+            <PROPERTIES>
+              <GROUP NAME="Main">
+                <PROPERTYITEM DESCRIPTION="Outgoing email host used to route outgoing e-mail (add :port for non-standard port)" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Outgoing Mail Host" NAME="host" REQUIRED="true" VALUE="ibiwebmail7.ibi.com" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Message recipient as an email address, use ';' to delimit multiple addresses" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="To" NAME="to" REQUIRED="true" VALUE="alan_tsang@ibi.com" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Subject of the message" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Subject of Msg" NAME="subject" REQUIRED="false" VALUE="Employee Sync Failed" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Sender of this email" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Sender address" NAME="from" REQUIRED="false" VALUE="alan_tsang@ibi.com" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Carbon copy recipient of this email, use ';' to delimit multiple addresses" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Copy To" NAME="cc" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Blind Carbon copy recipient of this email, use ';' to delimit multiple addresses" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Blind Copy To" NAME="bcc" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Address to replyto for this email, use ';' to delimit multiple addresses" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Reply-to" NAME="replyto" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Contains the data for the email body, default (blank) is the inbound document" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Content" NAME="body" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Tag name that holds a path to a file to be attached" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Attachment Tag" NAME="attach" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="If true, the inbound document is treated as an attachment. Attachment name is then required" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="boolean" LABEL="Add As Attachment" NAME="docattach" REQUIRED="false" VALUE="false" VALUETYPE="boolean"/>
+                <PROPERTYITEM DESCRIPTION="Name of the inbound document attachment" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Document Attachment Name" NAME="docattachname" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Content Type of the Attachment" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Attachment Content Type" NAME="docattachctype" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Is the valid user ID to log in to the SMTP host server" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="User ID" NAME="userid" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Is a valid password to authenticate the SMTP user ID" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="password" LABEL="Password" NAME="password" REQUIRED="false" VALUE="" VALUETYPE="password"/>
+                <PROPERTYITEM DESCRIPTION="Content Type of Data" DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combobox" LABEL="Content Type" NAME="contenttype" REQUIRED="false" VALUE="" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="'status' - status document will be the out document. 'input' - in document will become the out document." DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combolist" LABEL="Return" NAME="return" REQUIRED="false" VALUE="status" VALUETYPE="string"/>
+                <PROPERTYITEM DESCRIPTION="Security protocol:&lt;br> none - clear SMTP connection.&lt;br> SSLv2 - SMTPS - connect to secure SMTP server.&lt;br> STARTTLS - connect to an unsecured SMTP server, then negotiate SSL/TLS connection    " DISPLAY="Yes" HIDDEN="false" ITEMTYPE="combolist" LABEL="Security Protocol" NAME="usessl" REQUIRED="false" VALUE="none" VALUETYPE="string"/>
+              </GROUP>
+              <GUIDS/>
+              <REGISTERS NAME="Pre-Execution"/>
+              <REGISTERS NAME="Post-Execution"/>
+            </PROPERTIES>
+          </USER>
+        </OBJECT>
+      </OBJECTS>
+      <RELATIONS STARTINSTANCE="1">
+        <RELATION COMPLETION="OnSuccess" EVENT="" FROMINSTANCE="4" LINEDESCRIPTION="Success" LINEDISPLAY="OnSuccess" LINEID="FLOWCHART_SUCCESS_LINE" TOINSTANCE="2"/>
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="3" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="4">
+          <CUSTOMEVENTS/>
+        </RELATION>
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="1" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="5">
+          <CUSTOMEVENTS/>
+        </RELATION>
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="5" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="3">
+          <CUSTOMEVENTS/>
+        </RELATION>
+        <RELATION COMPLETION="OnError" EVENT="" FROMINSTANCE="4" LINEDESCRIPTION="Error" LINEDISPLAY="OnError" LINEID="FLOWCHART_FAIL_LINE" TOINSTANCE="6"/>
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="6" LINEDESCRIPTION="Completion" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="7"/>
+        <RELATION COMPLETION="OnCompletion" EVENT="" FROMINSTANCE="7" LINEDISPLAY="OnCompletion" LINEID="FLOWCHART_DEFAULT_LINE" TOINSTANCE="2">
+          <CUSTOMEVENTS/>
+        </RELATION>
+      </RELATIONS>
+      <TEXTLABELS/>
+    </PROCESSFLOW>
+  </SERVER>
+  <GLOBALVARIABLES/>
+</IWAY>
